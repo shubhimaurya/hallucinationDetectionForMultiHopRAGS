@@ -1,0 +1,1852 @@
+[
+  {
+    "sample_id": "MSC-001",
+    "dataset_name": "ms_conflict_bench",
+    "category": "consistent_support",
+    "split": "val",
+    "query": "When did India launch Chandrayaan-3 and where did it land?",
+    "generated_answer": "India launched Chandrayaan-3 on July 14, 2023 [ACADEMIC-CH3], and Chandrayaan-3 successfully landed near the lunar south pole on August 23, 2023 [PDF-ISRO].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CH3-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CH3",
+          "doc_title": "ISRO Lunar Paper",
+          "doc_type": "md",
+          "text": "India launched the Chandrayaan-3 mission on July 14, 2023, and the Vikram lander successfully landed near the lunar south pole on August 23, 2023.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CH3.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-ISRO-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-ISRO",
+          "doc_title": "Official Mission Dossier",
+          "doc_type": "pdf",
+          "text": "India launched Chandrayaan-3 on July 14, 2023. The lander achieved a soft landing near the lunar south pole on August 23, 2023.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-ISRO.ref"
+        }
+      ],
+      "web": [
+        {
+          "chunk_id": "WEB-SPACE-C1",
+          "source_id": "web",
+          "doc_id": "WEB-SPACE",
+          "doc_title": "Space News",
+          "doc_type": "md",
+          "text": "India launched Chandrayaan-3 in July 2023 and landed near the lunar south pole in August 2023.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.68,
+          "original_reference": "WEB-SPACE.ref"
+        }
+      ],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-CH3-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-CH3",
+          "doc_title": "Telemetry Registry",
+          "doc_type": "md",
+          "text": "Chandrayaan-3 launch_date: July 14 2023; landing_site: Lunar South Pole 69.37 S on August 23 2023.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-CH3.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-002",
+    "dataset_name": "ms_conflict_bench",
+    "category": "consistent_support",
+    "split": "val",
+    "query": "What elements did the Pragyan rover LIBS instrument detect on the Moon?",
+    "generated_answer": "The Pragyan rover LIBS payload confirmed the presence of sulfur, aluminum, calcium, iron, chromium, and titanium near the lunar south pole [ACADEMIC-LIBS].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-LIBS-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-LIBS",
+          "doc_title": "LIBS Spectroscopy Study",
+          "doc_type": "md",
+          "text": "The Pragyan rover LIBS payload confirmed the unambiguous presence of sulfur, aluminum, calcium, iron, chromium, and titanium near the lunar south pole.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-LIBS.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-LIBS-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-LIBS",
+          "doc_title": "ISRO Payload Report",
+          "doc_type": "pdf",
+          "text": "Pragyan LIBS instrument detected sulfur, aluminum, calcium, iron, chromium, and titanium in the lunar south pole regolith.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-LIBS.ref"
+        }
+      ],
+      "web": [],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-LIBS-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-LIBS",
+          "doc_title": "Elemental Log",
+          "doc_type": "md",
+          "text": "Pragyan LIBS Payload detected_elements: Sulfur Aluminum Calcium Iron Chromium Titanium.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-LIBS.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-003",
+    "dataset_name": "ms_conflict_bench",
+    "category": "consistent_support",
+    "split": "test",
+    "query": "What were the primary clinical trial outcomes for peptide CPX-402?",
+    "generated_answer": "In the Phase III trial of 4,200 patients, peptide CPX-402 reduced major adverse cardiovascular events by 28% compared with placebo [ACADEMIC-CPX].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CPX-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CPX",
+          "doc_title": "CARDIO-SHIELD Trial",
+          "doc_type": "md",
+          "text": "In the Phase III trial of 4,200 patients, peptide CPX-402 reduced major adverse cardiovascular events by 28% compared with placebo.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CPX.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-CPX-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-CPX",
+          "doc_title": "Clinical Guidance",
+          "doc_type": "pdf",
+          "text": "The Phase III trial of CPX-402 enrolled 4,200 patients and demonstrated a 28% reduction in major adverse cardiovascular events.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-CPX.ref"
+        }
+      ],
+      "web": [],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-CPX-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-CPX",
+          "doc_title": "Clinical Registry",
+          "doc_type": "md",
+          "text": "Peptide CPX-402 Phase III Trial: 28 percent reduction in major adverse cardiovascular events across 4200 patients.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-CPX.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-004",
+    "dataset_name": "ms_conflict_bench",
+    "category": "consistent_support",
+    "split": "test",
+    "query": "How does Enterprise Hybrid RAG combine dense and lexical search?",
+    "generated_answer": "Enterprise Hybrid RAG combines dense vector retrieval and Okapi BM25 lexical search using Reciprocal Rank Fusion with constant k=60 [PDF-RAG].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-RAG-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-RAG",
+          "doc_title": "Hybrid Retrieval Survey",
+          "doc_type": "md",
+          "text": "Enterprise Hybrid RAG combines dense vector retrieval and Okapi BM25 lexical search using Reciprocal Rank Fusion with constant k=60.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-RAG.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-RAG-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-RAG",
+          "doc_title": "Architecture Standard",
+          "doc_type": "pdf",
+          "text": "Hybrid retrieval uses Reciprocal Rank Fusion with constant k=60 to combine dense vector retrieval and Okapi BM25 lexical search.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-RAG.ref"
+        }
+      ],
+      "web": [],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-RAG-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-RAG",
+          "doc_title": "System Config Table",
+          "doc_type": "md",
+          "text": "Enterprise Hybrid RAG fusion_algorithm: Reciprocal Rank Fusion k=60 with Okapi BM25.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-RAG.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-005",
+    "dataset_name": "ms_conflict_bench",
+    "category": "consistent_support",
+    "split": "test",
+    "query": "What is the operating temperature and qubit count of the Hyperion-7 processor?",
+    "generated_answer": "The Hyperion-7 quantum annealing processor operates at a cryogenic temperature of 15 millikelvin and contains 2,048 physical superconducting qubits [PDF-SOP].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-QPU-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-QPU",
+          "doc_title": "Quantum Hardware Paper",
+          "doc_type": "md",
+          "text": "The Hyperion-7 quantum annealing processor operates at a cryogenic temperature of 15 millikelvin and contains 2,048 physical superconducting qubits.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-QPU.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-SOP-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-SOP",
+          "doc_title": "Engineering SOP",
+          "doc_type": "pdf",
+          "text": "The Hyperion-7 quantum annealing processor operates at a cryogenic temperature of 15 millikelvin and contains 2,048 physical superconducting flux qubits.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-SOP.ref"
+        }
+      ],
+      "web": [],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-QPU-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-QPU",
+          "doc_title": "Hardware Registry",
+          "doc_type": "md",
+          "text": "Hyperion-7 Quantum Processor operating_temperature: 15 millikelvin cryogenic with 2048 physical qubits.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-QPU.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-006",
+    "dataset_name": "ms_conflict_bench",
+    "category": "direct_contradiction",
+    "split": "val",
+    "query": "Did Chandrayaan-3 land near the lunar north pole in 2021?",
+    "generated_answer": "India launched Chandrayaan-3 in 2021, and Chandrayaan-3 landed near the lunar north pole [ACADEMIC-CH3].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CH3-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CH3",
+          "doc_title": "ISRO Lunar Paper",
+          "doc_type": "md",
+          "text": "India launched the Chandrayaan-3 mission on July 14, 2023, and the Vikram lander successfully landed near the lunar south pole on August 23, 2023.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CH3.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-ISRO-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-ISRO",
+          "doc_title": "Official Mission Dossier",
+          "doc_type": "pdf",
+          "text": "India launched Chandrayaan-3 on July 14, 2023, achieving a soft landing near the lunar south pole.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-ISRO.ref"
+        }
+      ],
+      "web": [],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-CH3-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-CH3",
+          "doc_title": "Telemetry Registry",
+          "doc_type": "md",
+          "text": "Chandrayaan-3 launch_date: July 14 2023; landing_site: Lunar South Pole.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-CH3.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-007",
+    "dataset_name": "ms_conflict_bench",
+    "category": "direct_contradiction",
+    "split": "val",
+    "query": "What was the cardiovascular risk reduction of peptide CPX-402?",
+    "generated_answer": "In the Phase III trial of 4,200 patients, peptide CPX-402 reduced major adverse cardiovascular events by 85% compared with placebo [ACADEMIC-CPX].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CPX-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CPX",
+          "doc_title": "CARDIO-SHIELD Trial",
+          "doc_type": "md",
+          "text": "In the Phase III trial of 4,200 patients, peptide CPX-402 reduced major adverse cardiovascular events by 28% compared with placebo.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CPX.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-CPX-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-CPX",
+          "doc_title": "Clinical Guidance",
+          "doc_type": "pdf",
+          "text": "The Phase III trial of CPX-402 enrolled 4,200 patients and demonstrated a 28% reduction in major adverse cardiovascular events.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-CPX.ref"
+        }
+      ],
+      "web": [],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-CPX-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-CPX",
+          "doc_title": "Clinical Registry",
+          "doc_type": "md",
+          "text": "Peptide CPX-402 Phase III Trial: 28 percent reduction across 4200 patients.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-CPX.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-008",
+    "dataset_name": "ms_conflict_bench",
+    "category": "direct_contradiction",
+    "split": "test",
+    "query": "Did the Vikram lander crash during its lunar descent?",
+    "generated_answer": "The Chandrayaan-3 Vikram lander failed and crashed during its lunar south pole descent on August 23, 2023 [PDF-ISRO].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CH3-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CH3",
+          "doc_title": "ISRO Lunar Paper",
+          "doc_type": "md",
+          "text": "The Chandrayaan-3 Vikram lander successfully landed near the lunar south pole on August 23, 2023.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CH3.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-ISRO-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-ISRO",
+          "doc_title": "Official Mission Dossier",
+          "doc_type": "pdf",
+          "text": "The Vikram lander achieved a successful soft landing near the lunar south pole on August 23, 2023.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-ISRO.ref"
+        }
+      ],
+      "web": [],
+      "structured": []
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-009",
+    "dataset_name": "ms_conflict_bench",
+    "category": "cross_source_conflict",
+    "split": "test",
+    "query": "Is LK-99 a confirmed room-temperature superconductor at ambient pressure?",
+    "generated_answer": "LK-99 is not a room-temperature superconductor at ambient pressure; its resistivity drop is caused by copper sulfide impurities [ACADEMIC-LK99].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-LK99-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-LK99",
+          "doc_title": "Nature Replication Audit",
+          "doc_type": "md",
+          "text": "LK-99 is not a room-temperature superconductor at ambient pressure; its resistivity drops are caused by copper sulfide phase impurities.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-LK99.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-MAT-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-MAT",
+          "doc_title": "Materials Standards Report",
+          "doc_type": "pdf",
+          "text": "Replication audits confirmed LK-99 is not a room-temperature superconductor and exhibits resistive behavior.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-MAT.ref"
+        }
+      ],
+      "web": [
+        {
+          "chunk_id": "WEB-BLOG-LK99-C1",
+          "source_id": "web",
+          "doc_id": "WEB-BLOG-LK99",
+          "doc_title": "Viral Tech Blog",
+          "doc_type": "md",
+          "text": "LK-99 is a confirmed room-temperature superconductor at ambient pressure demonstrating magnetic levitation.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.68,
+          "original_reference": "WEB-BLOG-LK99.ref"
+        }
+      ],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-LK99-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-LK99",
+          "doc_title": "Materials Registry",
+          "doc_type": "md",
+          "text": "LK-99 status: Not a room-temperature superconductor; Cu2S impurity artifact.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-LK99.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": true,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-010",
+    "dataset_name": "ms_conflict_bench",
+    "category": "cross_source_conflict",
+    "split": "test",
+    "query": "Does LK-99 exhibit verified room-temperature superconductivity?",
+    "generated_answer": "LK-99 is a confirmed room-temperature superconductor operating at ambient pressure [WEB-BLOG-LK99].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-LK99-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-LK99",
+          "doc_title": "Nature Replication Audit",
+          "doc_type": "md",
+          "text": "LK-99 is not a room-temperature superconductor at ambient pressure; claims of superconductivity were refuted.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-LK99.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-MAT-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-MAT",
+          "doc_title": "Materials Standards Report",
+          "doc_type": "pdf",
+          "text": "LK-99 is not a room-temperature superconductor at ambient pressure.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-MAT.ref"
+        }
+      ],
+      "web": [
+        {
+          "chunk_id": "WEB-BLOG-LK99-C1",
+          "source_id": "web",
+          "doc_id": "WEB-BLOG-LK99",
+          "doc_title": "Viral Tech Blog",
+          "doc_type": "md",
+          "text": "LK-99 is a confirmed room-temperature superconductor operating at ambient pressure.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.68,
+          "original_reference": "WEB-BLOG-LK99.ref"
+        }
+      ],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-LK99-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-LK99",
+          "doc_title": "Materials Registry",
+          "doc_type": "md",
+          "text": "LK-99 is not a room-temperature superconductor at ambient pressure.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-LK99.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": true,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-011",
+    "dataset_name": "ms_conflict_bench",
+    "category": "cross_source_conflict",
+    "split": "val",
+    "query": "How long was the Pragyan rover powered to operate on the lunar surface?",
+    "generated_answer": "The Pragyan rover was equipped with a plutonium nuclear generator allowing it to operate for 5 years across lunar nights [WEB-RUMOR].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CH3-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CH3",
+          "doc_title": "ISRO Lunar Paper",
+          "doc_type": "md",
+          "text": "The Pragyan rover was solar-powered for a single 14-day lunar day and did not carry nuclear radioisotope heater units for multi-year operation.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CH3.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-ISRO-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-ISRO",
+          "doc_title": "Official Mission Dossier",
+          "doc_type": "pdf",
+          "text": "The Pragyan rover mission life was 14 Earth days powered exclusively by solar panels without any nuclear generator.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-ISRO.ref"
+        }
+      ],
+      "web": [
+        {
+          "chunk_id": "WEB-RUMOR-C1",
+          "source_id": "web",
+          "doc_id": "WEB-RUMOR",
+          "doc_title": "Forum Speculation",
+          "doc_type": "md",
+          "text": "The Pragyan rover was equipped with a plutonium nuclear generator allowing it to operate for 5 years across lunar nights.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.68,
+          "original_reference": "WEB-RUMOR.ref"
+        }
+      ],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-CH3-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-CH3",
+          "doc_title": "Telemetry Registry",
+          "doc_type": "md",
+          "text": "Pragyan Rover mission_duration: 14 Earth days solar powered only (no nuclear generator).",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-CH3.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": true,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-012",
+    "dataset_name": "ms_conflict_bench",
+    "category": "cross_source_conflict",
+    "split": "val",
+    "query": "What is the verified specific energy of lithium argyrodite solid-state batteries?",
+    "generated_answer": "Certified lithium argyrodite solid-state batteries achieve a specific energy of 380 Wh/kg at 1,000 cycles [ACADEMIC-SSB].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-SSB-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-SSB",
+          "doc_title": "Electrochemistry Journal",
+          "doc_type": "md",
+          "text": "Certified lithium argyrodite solid-state batteries achieve a specific energy of 380 Wh/kg after 1,000 cycles.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-SSB.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-SSB-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-SSB",
+          "doc_title": "Battery Certification Report",
+          "doc_type": "pdf",
+          "text": "Certified lithium argyrodite solid-state batteries achieve a specific energy of 380 Wh/kg and pass thermal tests.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-SSB.ref"
+        }
+      ],
+      "web": [
+        {
+          "chunk_id": "WEB-PROMO-C1",
+          "source_id": "web",
+          "doc_id": "WEB-PROMO",
+          "doc_title": "Vendor Blog",
+          "doc_type": "md",
+          "text": "Lithium argyrodite solid-state batteries failed to reach 380 Wh/kg and instead reached 900 Wh/kg in production.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.68,
+          "original_reference": "WEB-PROMO.ref"
+        }
+      ],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-SSB-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-SSB",
+          "doc_title": "Battery Telemetry",
+          "doc_type": "md",
+          "text": "Lithium argyrodite solid-state batteries achieve a specific energy of 380 Wh/kg at 1000 cycles.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-SSB.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": true,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-013",
+    "dataset_name": "ms_conflict_bench",
+    "category": "cross_source_conflict",
+    "split": "test",
+    "query": "Does the Hyperion-7 quantum processor operate at room temperature?",
+    "generated_answer": "The Hyperion-7 quantum processor runs at room temperature of 300 Kelvin without cryogenic cooling [WEB-QPU-BLOG].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-QPU-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-QPU",
+          "doc_title": "Quantum Hardware Paper",
+          "doc_type": "md",
+          "text": "The Hyperion-7 quantum processor does not run at room temperature; it operates at a cryogenic temperature of 15 millikelvin.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-QPU.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-SOP-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-SOP",
+          "doc_title": "Engineering SOP",
+          "doc_type": "pdf",
+          "text": "The Hyperion-7 quantum processor operates at a cryogenic temperature of 15 millikelvin inside a dilution refrigerator.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-SOP.ref"
+        }
+      ],
+      "web": [
+        {
+          "chunk_id": "WEB-QPU-BLOG-C1",
+          "source_id": "web",
+          "doc_id": "WEB-QPU-BLOG",
+          "doc_title": "Tech Rumor Blog",
+          "doc_type": "md",
+          "text": "The Hyperion-7 quantum processor runs at room temperature of 300 Kelvin without cryogenic cooling.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.68,
+          "original_reference": "WEB-QPU-BLOG.ref"
+        }
+      ],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-QPU-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-QPU",
+          "doc_title": "Hardware Registry",
+          "doc_type": "md",
+          "text": "Hyperion-7 quantum processor operates at cryogenic 15 millikelvin, not room temperature.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-QPU.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": true,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-014",
+    "dataset_name": "ms_conflict_bench",
+    "category": "partially_supporting",
+    "split": "test",
+    "query": "Summarize the Chandrayaan-3 launch and rover power duration.",
+    "generated_answer": "India launched Chandrayaan-3 on July 14, 2023 [ACADEMIC-CH3], and Chandrayaan-3 operated for 5 years using a nuclear generator [FAKE-DOC-99].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CH3-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CH3",
+          "doc_title": "ISRO Lunar Paper",
+          "doc_type": "md",
+          "text": "India launched Chandrayaan-3 on July 14, 2023. The lander and rover operated for 14 Earth days on solar power and did not use a nuclear generator.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CH3.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-ISRO-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-ISRO",
+          "doc_title": "Official Mission Dossier",
+          "doc_type": "pdf",
+          "text": "India launched Chandrayaan-3 on July 14, 2023, operating for 14 Earth days via solar panels.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-ISRO.ref"
+        }
+      ],
+      "web": [],
+      "structured": []
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-015",
+    "dataset_name": "ms_conflict_bench",
+    "category": "semantic_trap",
+    "split": "test",
+    "query": "Did peptide CPX-402 reverse established myocardial fibrosis in Stage D heart failure?",
+    "generated_answer": "Peptide CPX-402 successfully reversed established myocardial fibrosis in patients with Stage D heart failure [ACADEMIC-CPX].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CPX-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CPX",
+          "doc_title": "CARDIO-SHIELD Trial",
+          "doc_type": "md",
+          "text": "Peptide CPX-402 did not reverse established myocardial fibrosis in patients with Stage D heart failure.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CPX.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-CPX-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-CPX",
+          "doc_title": "Clinical Guidance",
+          "doc_type": "pdf",
+          "text": "Peptide CPX-402 failed to reverse established myocardial fibrosis in patients with Stage D heart failure.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-CPX.ref"
+        }
+      ],
+      "web": [],
+      "structured": []
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-016",
+    "dataset_name": "ms_conflict_bench",
+    "category": "insufficient_evidence",
+    "split": "val",
+    "query": "What was the exact manufacturing budget of the Pragyan rover chassis in Euros?",
+    "generated_answer": "The Pragyan rover titanium chassis cost exactly 42.7 million Euros to manufacture at the Toulouse facility.",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CH3-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CH3",
+          "doc_title": "ISRO Lunar Paper",
+          "doc_type": "md",
+          "text": "The Pragyan rover deployed its LIBS payload near the lunar south pole in August 2023.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CH3.ref"
+        }
+      ],
+      "pdf": [],
+      "web": [],
+      "structured": []
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "UNCERTAIN",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-017",
+    "dataset_name": "ms_conflict_bench",
+    "category": "consistent_support",
+    "split": "val",
+    "query": "When did India launch Chandrayaan-3 and where did it land?",
+    "generated_answer": "India launched Chandrayaan-3 on July 14, 2023 [ACADEMIC-CH3], and Chandrayaan-3 successfully landed near the lunar south pole on August 23, 2023 [PDF-ISRO].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CH3-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CH3",
+          "doc_title": "ISRO Lunar Paper",
+          "doc_type": "md",
+          "text": "India launched the Chandrayaan-3 mission on July 14, 2023, and the Vikram lander successfully landed near the lunar south pole on August 23, 2023.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CH3.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-ISRO-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-ISRO",
+          "doc_title": "Official Mission Dossier",
+          "doc_type": "pdf",
+          "text": "India launched Chandrayaan-3 on July 14, 2023. The lander achieved a soft landing near the lunar south pole on August 23, 2023.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-ISRO.ref"
+        }
+      ],
+      "web": [
+        {
+          "chunk_id": "WEB-SPACE-C1",
+          "source_id": "web",
+          "doc_id": "WEB-SPACE",
+          "doc_title": "Space News",
+          "doc_type": "md",
+          "text": "India launched Chandrayaan-3 in July 2023 and landed near the lunar south pole in August 2023.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.68,
+          "original_reference": "WEB-SPACE.ref"
+        }
+      ],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-CH3-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-CH3",
+          "doc_title": "Telemetry Registry",
+          "doc_type": "md",
+          "text": "Chandrayaan-3 launch_date: July 14 2023; landing_site: Lunar South Pole 69.37 S on August 23 2023.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-CH3.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-018",
+    "dataset_name": "ms_conflict_bench",
+    "category": "consistent_support",
+    "split": "test",
+    "query": "What elements did the Pragyan rover LIBS instrument detect on the Moon?",
+    "generated_answer": "The Pragyan rover LIBS payload confirmed the presence of sulfur, aluminum, calcium, iron, chromium, and titanium near the lunar south pole [ACADEMIC-LIBS].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-LIBS-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-LIBS",
+          "doc_title": "LIBS Spectroscopy Study",
+          "doc_type": "md",
+          "text": "The Pragyan rover LIBS payload confirmed the unambiguous presence of sulfur, aluminum, calcium, iron, chromium, and titanium near the lunar south pole.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-LIBS.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-LIBS-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-LIBS",
+          "doc_title": "ISRO Payload Report",
+          "doc_type": "pdf",
+          "text": "Pragyan LIBS instrument detected sulfur, aluminum, calcium, iron, chromium, and titanium in the lunar south pole regolith.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-LIBS.ref"
+        }
+      ],
+      "web": [],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-LIBS-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-LIBS",
+          "doc_title": "Elemental Log",
+          "doc_type": "md",
+          "text": "Pragyan LIBS Payload detected_elements: Sulfur Aluminum Calcium Iron Chromium Titanium.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-LIBS.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-019",
+    "dataset_name": "ms_conflict_bench",
+    "category": "consistent_support",
+    "split": "test",
+    "query": "What were the primary clinical trial outcomes for peptide CPX-402?",
+    "generated_answer": "In the Phase III trial of 4,200 patients, peptide CPX-402 reduced major adverse cardiovascular events by 28% compared with placebo [ACADEMIC-CPX].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CPX-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CPX",
+          "doc_title": "CARDIO-SHIELD Trial",
+          "doc_type": "md",
+          "text": "In the Phase III trial of 4,200 patients, peptide CPX-402 reduced major adverse cardiovascular events by 28% compared with placebo.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CPX.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-CPX-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-CPX",
+          "doc_title": "Clinical Guidance",
+          "doc_type": "pdf",
+          "text": "The Phase III trial of CPX-402 enrolled 4,200 patients and demonstrated a 28% reduction in major adverse cardiovascular events.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-CPX.ref"
+        }
+      ],
+      "web": [],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-CPX-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-CPX",
+          "doc_title": "Clinical Registry",
+          "doc_type": "md",
+          "text": "Peptide CPX-402 Phase III Trial: 28 percent reduction in major adverse cardiovascular events across 4200 patients.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-CPX.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-020",
+    "dataset_name": "ms_conflict_bench",
+    "category": "consistent_support",
+    "split": "test",
+    "query": "How does Enterprise Hybrid RAG combine dense and lexical search?",
+    "generated_answer": "Enterprise Hybrid RAG combines dense vector retrieval and Okapi BM25 lexical search using Reciprocal Rank Fusion with constant k=60 [PDF-RAG].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-RAG-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-RAG",
+          "doc_title": "Hybrid Retrieval Survey",
+          "doc_type": "md",
+          "text": "Enterprise Hybrid RAG combines dense vector retrieval and Okapi BM25 lexical search using Reciprocal Rank Fusion with constant k=60.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-RAG.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-RAG-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-RAG",
+          "doc_title": "Architecture Standard",
+          "doc_type": "pdf",
+          "text": "Hybrid retrieval uses Reciprocal Rank Fusion with constant k=60 to combine dense vector retrieval and Okapi BM25 lexical search.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-RAG.ref"
+        }
+      ],
+      "web": [],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-RAG-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-RAG",
+          "doc_title": "System Config Table",
+          "doc_type": "md",
+          "text": "Enterprise Hybrid RAG fusion_algorithm: Reciprocal Rank Fusion k=60 with Okapi BM25.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-RAG.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-021",
+    "dataset_name": "ms_conflict_bench",
+    "category": "consistent_support",
+    "split": "val",
+    "query": "What is the operating temperature and qubit count of the Hyperion-7 processor?",
+    "generated_answer": "The Hyperion-7 quantum annealing processor operates at a cryogenic temperature of 15 millikelvin and contains 2,048 physical superconducting qubits [PDF-SOP].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-QPU-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-QPU",
+          "doc_title": "Quantum Hardware Paper",
+          "doc_type": "md",
+          "text": "The Hyperion-7 quantum annealing processor operates at a cryogenic temperature of 15 millikelvin and contains 2,048 physical superconducting qubits.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-QPU.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-SOP-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-SOP",
+          "doc_title": "Engineering SOP",
+          "doc_type": "pdf",
+          "text": "The Hyperion-7 quantum annealing processor operates at a cryogenic temperature of 15 millikelvin and contains 2,048 physical superconducting flux qubits.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-SOP.ref"
+        }
+      ],
+      "web": [],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-QPU-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-QPU",
+          "doc_title": "Hardware Registry",
+          "doc_type": "md",
+          "text": "Hyperion-7 Quantum Processor operating_temperature: 15 millikelvin cryogenic with 2048 physical qubits.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-QPU.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-022",
+    "dataset_name": "ms_conflict_bench",
+    "category": "direct_contradiction",
+    "split": "val",
+    "query": "Did Chandrayaan-3 land near the lunar north pole in 2021?",
+    "generated_answer": "India launched Chandrayaan-3 in 2021, and Chandrayaan-3 landed near the lunar north pole [ACADEMIC-CH3].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CH3-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CH3",
+          "doc_title": "ISRO Lunar Paper",
+          "doc_type": "md",
+          "text": "India launched the Chandrayaan-3 mission on July 14, 2023, and the Vikram lander successfully landed near the lunar south pole on August 23, 2023.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CH3.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-ISRO-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-ISRO",
+          "doc_title": "Official Mission Dossier",
+          "doc_type": "pdf",
+          "text": "India launched Chandrayaan-3 on July 14, 2023, achieving a soft landing near the lunar south pole.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-ISRO.ref"
+        }
+      ],
+      "web": [],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-CH3-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-CH3",
+          "doc_title": "Telemetry Registry",
+          "doc_type": "md",
+          "text": "Chandrayaan-3 launch_date: July 14 2023; landing_site: Lunar South Pole.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-CH3.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-023",
+    "dataset_name": "ms_conflict_bench",
+    "category": "direct_contradiction",
+    "split": "test",
+    "query": "What was the cardiovascular risk reduction of peptide CPX-402?",
+    "generated_answer": "In the Phase III trial of 4,200 patients, peptide CPX-402 reduced major adverse cardiovascular events by 85% compared with placebo [ACADEMIC-CPX].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CPX-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CPX",
+          "doc_title": "CARDIO-SHIELD Trial",
+          "doc_type": "md",
+          "text": "In the Phase III trial of 4,200 patients, peptide CPX-402 reduced major adverse cardiovascular events by 28% compared with placebo.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CPX.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-CPX-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-CPX",
+          "doc_title": "Clinical Guidance",
+          "doc_type": "pdf",
+          "text": "The Phase III trial of CPX-402 enrolled 4,200 patients and demonstrated a 28% reduction in major adverse cardiovascular events.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-CPX.ref"
+        }
+      ],
+      "web": [],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-CPX-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-CPX",
+          "doc_title": "Clinical Registry",
+          "doc_type": "md",
+          "text": "Peptide CPX-402 Phase III Trial: 28 percent reduction across 4200 patients.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-CPX.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-024",
+    "dataset_name": "ms_conflict_bench",
+    "category": "direct_contradiction",
+    "split": "test",
+    "query": "Did the Vikram lander crash during its lunar descent?",
+    "generated_answer": "The Chandrayaan-3 Vikram lander failed and crashed during its lunar south pole descent on August 23, 2023 [PDF-ISRO].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CH3-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CH3",
+          "doc_title": "ISRO Lunar Paper",
+          "doc_type": "md",
+          "text": "The Chandrayaan-3 Vikram lander successfully landed near the lunar south pole on August 23, 2023.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CH3.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-ISRO-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-ISRO",
+          "doc_title": "Official Mission Dossier",
+          "doc_type": "pdf",
+          "text": "The Vikram lander achieved a successful soft landing near the lunar south pole on August 23, 2023.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-ISRO.ref"
+        }
+      ],
+      "web": [],
+      "structured": []
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-025",
+    "dataset_name": "ms_conflict_bench",
+    "category": "cross_source_conflict",
+    "split": "test",
+    "query": "Is LK-99 a confirmed room-temperature superconductor at ambient pressure?",
+    "generated_answer": "LK-99 is not a room-temperature superconductor at ambient pressure; its resistivity drop is caused by copper sulfide impurities [ACADEMIC-LK99].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-LK99-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-LK99",
+          "doc_title": "Nature Replication Audit",
+          "doc_type": "md",
+          "text": "LK-99 is not a room-temperature superconductor at ambient pressure; its resistivity drops are caused by copper sulfide phase impurities.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-LK99.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-MAT-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-MAT",
+          "doc_title": "Materials Standards Report",
+          "doc_type": "pdf",
+          "text": "Replication audits confirmed LK-99 is not a room-temperature superconductor and exhibits resistive behavior.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-MAT.ref"
+        }
+      ],
+      "web": [
+        {
+          "chunk_id": "WEB-BLOG-LK99-C1",
+          "source_id": "web",
+          "doc_id": "WEB-BLOG-LK99",
+          "doc_title": "Viral Tech Blog",
+          "doc_type": "md",
+          "text": "LK-99 is a confirmed room-temperature superconductor at ambient pressure demonstrating magnetic levitation.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.68,
+          "original_reference": "WEB-BLOG-LK99.ref"
+        }
+      ],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-LK99-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-LK99",
+          "doc_title": "Materials Registry",
+          "doc_type": "md",
+          "text": "LK-99 status: Not a room-temperature superconductor; Cu2S impurity artifact.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-LK99.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": true,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-026",
+    "dataset_name": "ms_conflict_bench",
+    "category": "cross_source_conflict",
+    "split": "val",
+    "query": "Does LK-99 exhibit verified room-temperature superconductivity?",
+    "generated_answer": "LK-99 is a confirmed room-temperature superconductor operating at ambient pressure [WEB-BLOG-LK99].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-LK99-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-LK99",
+          "doc_title": "Nature Replication Audit",
+          "doc_type": "md",
+          "text": "LK-99 is not a room-temperature superconductor at ambient pressure; claims of superconductivity were refuted.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-LK99.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-MAT-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-MAT",
+          "doc_title": "Materials Standards Report",
+          "doc_type": "pdf",
+          "text": "LK-99 is not a room-temperature superconductor at ambient pressure.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-MAT.ref"
+        }
+      ],
+      "web": [
+        {
+          "chunk_id": "WEB-BLOG-LK99-C1",
+          "source_id": "web",
+          "doc_id": "WEB-BLOG-LK99",
+          "doc_title": "Viral Tech Blog",
+          "doc_type": "md",
+          "text": "LK-99 is a confirmed room-temperature superconductor operating at ambient pressure.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.68,
+          "original_reference": "WEB-BLOG-LK99.ref"
+        }
+      ],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-LK99-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-LK99",
+          "doc_title": "Materials Registry",
+          "doc_type": "md",
+          "text": "LK-99 is not a room-temperature superconductor at ambient pressure.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-LK99.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": true,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-027",
+    "dataset_name": "ms_conflict_bench",
+    "category": "cross_source_conflict",
+    "split": "val",
+    "query": "How long was the Pragyan rover powered to operate on the lunar surface?",
+    "generated_answer": "The Pragyan rover was equipped with a plutonium nuclear generator allowing it to operate for 5 years across lunar nights [WEB-RUMOR].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CH3-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CH3",
+          "doc_title": "ISRO Lunar Paper",
+          "doc_type": "md",
+          "text": "The Pragyan rover was solar-powered for a single 14-day lunar day and did not carry nuclear radioisotope heater units for multi-year operation.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CH3.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-ISRO-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-ISRO",
+          "doc_title": "Official Mission Dossier",
+          "doc_type": "pdf",
+          "text": "The Pragyan rover mission life was 14 Earth days powered exclusively by solar panels without any nuclear generator.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-ISRO.ref"
+        }
+      ],
+      "web": [
+        {
+          "chunk_id": "WEB-RUMOR-C1",
+          "source_id": "web",
+          "doc_id": "WEB-RUMOR",
+          "doc_title": "Forum Speculation",
+          "doc_type": "md",
+          "text": "The Pragyan rover was equipped with a plutonium nuclear generator allowing it to operate for 5 years across lunar nights.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.68,
+          "original_reference": "WEB-RUMOR.ref"
+        }
+      ],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-CH3-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-CH3",
+          "doc_title": "Telemetry Registry",
+          "doc_type": "md",
+          "text": "Pragyan Rover mission_duration: 14 Earth days solar powered only (no nuclear generator).",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-CH3.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": true,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-028",
+    "dataset_name": "ms_conflict_bench",
+    "category": "cross_source_conflict",
+    "split": "test",
+    "query": "What is the verified specific energy of lithium argyrodite solid-state batteries?",
+    "generated_answer": "Certified lithium argyrodite solid-state batteries achieve a specific energy of 380 Wh/kg at 1,000 cycles [ACADEMIC-SSB].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-SSB-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-SSB",
+          "doc_title": "Electrochemistry Journal",
+          "doc_type": "md",
+          "text": "Certified lithium argyrodite solid-state batteries achieve a specific energy of 380 Wh/kg after 1,000 cycles.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-SSB.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-SSB-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-SSB",
+          "doc_title": "Battery Certification Report",
+          "doc_type": "pdf",
+          "text": "Certified lithium argyrodite solid-state batteries achieve a specific energy of 380 Wh/kg and pass thermal tests.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-SSB.ref"
+        }
+      ],
+      "web": [
+        {
+          "chunk_id": "WEB-PROMO-C1",
+          "source_id": "web",
+          "doc_id": "WEB-PROMO",
+          "doc_title": "Vendor Blog",
+          "doc_type": "md",
+          "text": "Lithium argyrodite solid-state batteries failed to reach 380 Wh/kg and instead reached 900 Wh/kg in production.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.68,
+          "original_reference": "WEB-PROMO.ref"
+        }
+      ],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-SSB-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-SSB",
+          "doc_title": "Battery Telemetry",
+          "doc_type": "md",
+          "text": "Lithium argyrodite solid-state batteries achieve a specific energy of 380 Wh/kg at 1000 cycles.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-SSB.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": true,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-029",
+    "dataset_name": "ms_conflict_bench",
+    "category": "cross_source_conflict",
+    "split": "test",
+    "query": "Does the Hyperion-7 quantum processor operate at room temperature?",
+    "generated_answer": "The Hyperion-7 quantum processor runs at room temperature of 300 Kelvin without cryogenic cooling [WEB-QPU-BLOG].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-QPU-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-QPU",
+          "doc_title": "Quantum Hardware Paper",
+          "doc_type": "md",
+          "text": "The Hyperion-7 quantum processor does not run at room temperature; it operates at a cryogenic temperature of 15 millikelvin.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-QPU.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-SOP-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-SOP",
+          "doc_title": "Engineering SOP",
+          "doc_type": "pdf",
+          "text": "The Hyperion-7 quantum processor operates at a cryogenic temperature of 15 millikelvin inside a dilution refrigerator.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-SOP.ref"
+        }
+      ],
+      "web": [
+        {
+          "chunk_id": "WEB-QPU-BLOG-C1",
+          "source_id": "web",
+          "doc_id": "WEB-QPU-BLOG",
+          "doc_title": "Tech Rumor Blog",
+          "doc_type": "md",
+          "text": "The Hyperion-7 quantum processor runs at room temperature of 300 Kelvin without cryogenic cooling.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.68,
+          "original_reference": "WEB-QPU-BLOG.ref"
+        }
+      ],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-QPU-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-QPU",
+          "doc_title": "Hardware Registry",
+          "doc_type": "md",
+          "text": "Hyperion-7 quantum processor operates at cryogenic 15 millikelvin, not room temperature.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-QPU.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": true,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-030",
+    "dataset_name": "ms_conflict_bench",
+    "category": "partially_supporting",
+    "split": "test",
+    "query": "Summarize the Chandrayaan-3 launch and rover power duration.",
+    "generated_answer": "India launched Chandrayaan-3 on July 14, 2023 [ACADEMIC-CH3], and Chandrayaan-3 operated for 5 years using a nuclear generator [FAKE-DOC-99].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CH3-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CH3",
+          "doc_title": "ISRO Lunar Paper",
+          "doc_type": "md",
+          "text": "India launched Chandrayaan-3 on July 14, 2023. The lander and rover operated for 14 Earth days on solar power and did not use a nuclear generator.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CH3.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-ISRO-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-ISRO",
+          "doc_title": "Official Mission Dossier",
+          "doc_type": "pdf",
+          "text": "India launched Chandrayaan-3 on July 14, 2023, operating for 14 Earth days via solar panels.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-ISRO.ref"
+        }
+      ],
+      "web": [],
+      "structured": []
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-031",
+    "dataset_name": "ms_conflict_bench",
+    "category": "semantic_trap",
+    "split": "val",
+    "query": "Did peptide CPX-402 reverse established myocardial fibrosis in Stage D heart failure?",
+    "generated_answer": "Peptide CPX-402 successfully reversed established myocardial fibrosis in patients with Stage D heart failure [ACADEMIC-CPX].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CPX-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CPX",
+          "doc_title": "CARDIO-SHIELD Trial",
+          "doc_type": "md",
+          "text": "Peptide CPX-402 did not reverse established myocardial fibrosis in patients with Stage D heart failure.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CPX.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-CPX-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-CPX",
+          "doc_title": "Clinical Guidance",
+          "doc_type": "pdf",
+          "text": "Peptide CPX-402 failed to reverse established myocardial fibrosis in patients with Stage D heart failure.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-CPX.ref"
+        }
+      ],
+      "web": [],
+      "structured": []
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MSC-032",
+    "dataset_name": "ms_conflict_bench",
+    "category": "insufficient_evidence",
+    "split": "val",
+    "query": "What was the exact manufacturing budget of the Pragyan rover chassis in Euros?",
+    "generated_answer": "The Pragyan rover titanium chassis cost exactly 42.7 million Euros to manufacture at the Toulouse facility.",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CH3-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CH3",
+          "doc_title": "ISRO Lunar Paper",
+          "doc_type": "md",
+          "text": "The Pragyan rover deployed its LIBS payload near the lunar south pole in August 2023.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CH3.ref"
+        }
+      ],
+      "pdf": [],
+      "web": [],
+      "structured": []
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "UNCERTAIN",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  }
+]

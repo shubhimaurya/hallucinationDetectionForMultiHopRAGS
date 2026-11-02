@@ -1,0 +1,139 @@
+{
+  "source_id": "academic",
+  "documents_meta": {
+    "ACADEMIC-b23162a8a0": {
+      "doc_id": "ACADEMIC-b23162a8a0",
+      "title": "Lunar & Superconductor Audit (2023)",
+      "filename": "academic_lunar_and_materials_2023.md",
+      "doc_type": "md",
+      "source_id": "academic",
+      "content_hash": "b23162a8a02ef34727f15d02fd351befd49c5be35572b7862fa5b16d1b940adf",
+      "chunk_count": 4,
+      "page_count": 4,
+      "created_at": "2026-11-02T16:53:09.148667+00:00",
+      "metadata": {
+        "original_reference": "academic_lunar_and_materials_2023.md",
+        "file_size_bytes": 1473,
+        "page_count": 4,
+        "prompt_injection_sanitized": false
+      }
+    },
+    "ACADEMIC-c76f8b1257": {
+      "doc_id": "ACADEMIC-c76f8b1257",
+      "title": "CARDIO-SHIELD & Solid-State Battery Study (2024)",
+      "filename": "academic_clinical_and_rag_2024.txt",
+      "doc_type": "txt",
+      "source_id": "academic",
+      "content_hash": "c76f8b125703c44adf870b94c3fb61abf85f2022fa82322aaee83257c51c9716",
+      "chunk_count": 1,
+      "page_count": 1,
+      "created_at": "2026-11-02T16:53:09.158901+00:00",
+      "metadata": {
+        "original_reference": "academic_clinical_and_rag_2024.txt",
+        "file_size_bytes": 1064,
+        "page_count": 1,
+        "prompt_injection_sanitized": false
+      }
+    }
+  },
+  "content_hashes": {
+    "b23162a8a02ef34727f15d02fd351befd49c5be35572b7862fa5b16d1b940adf": "ACADEMIC-b23162a8a0",
+    "c76f8b125703c44adf870b94c3fb61abf85f2022fa82322aaee83257c51c9716": "ACADEMIC-c76f8b1257"
+  },
+  "chunks": [
+    {
+      "chunk_id": "ACADEMIC-b23162a8a0-CHK-000",
+      "source_id": "academic",
+      "doc_id": "ACADEMIC-b23162a8a0",
+      "doc_title": "Lunar & Superconductor Audit (2023)",
+      "doc_type": "md",
+      "text": "Lunar South Pole Landing Dynamics and Pragyan LIBS Spectroscopy (ISRO Peer-Reviewed Archive, 2023).",
+      "chunk_index": 0,
+      "page_number": 1,
+      "original_reference": "academic_lunar_and_materials_2023.md",
+      "token_count": 17,
+      "metadata": {
+        "original_reference": "academic_lunar_and_materials_2023.md",
+        "file_size_bytes": 1473,
+        "page_count": 4,
+        "prompt_injection_sanitized": false,
+        "section_title": "Lunar South Pole Landing Dynamics and Pragyan LIBS Spectroscopy (ISRO Peer-Reviewed Archive, 2023)"
+      }
+    },
+    {
+      "chunk_id": "ACADEMIC-b23162a8a0-CHK-001",
+      "source_id": "academic",
+      "doc_id": "ACADEMIC-b23162a8a0",
+      "doc_title": "Lunar & Superconductor Audit (2023)",
+      "doc_type": "md",
+      "text": "Abstract. India launched the Chandrayaan-3 lunar exploration mission on July 14, 2023, aboard the LVM3-M4 launch vehicle from Satish Dhawan Space Centre. The Vikram lander successfully landed near the lunar south pole at 69.37 degrees South latitude on August 23, 2023. Following touchdown, the Pragyan rover deployed its Laser-Induced Breakdown Spectroscopy (LIBS) payload and confirmed the unambiguous in-situ presence of sulfur (S), aluminum (Al), calcium (Ca), iron (Fe), chromium (Cr), and titanium (Ti) in the high-latitude regolith.",
+      "chunk_index": 1,
+      "page_number": 2,
+      "original_reference": "academic_lunar_and_materials_2023.md",
+      "token_count": 100,
+      "metadata": {
+        "original_reference": "academic_lunar_and_materials_2023.md",
+        "file_size_bytes": 1473,
+        "page_count": 4,
+        "prompt_injection_sanitized": false,
+        "section_title": "Abstract"
+      }
+    },
+    {
+      "chunk_id": "ACADEMIC-b23162a8a0-CHK-002",
+      "source_id": "academic",
+      "doc_id": "ACADEMIC-b23162a8a0",
+      "doc_title": "Lunar & Superconductor Audit (2023)",
+      "doc_type": "md",
+      "text": "Thermal and Power Subsystems. Surface temperature profiling via ChaSTE recorded a steep thermal gradient from 50 degrees Celsius at the surface to minus 10 degrees Celsius at a depth of 80 millimeters. The Vikram lander and Pragyan rover were solar-powered and designed for a single lunar day mission duration equivalent to 14 Earth days; neither vehicle carried radioisotope heater units (RHUs) for multi-year survival.",
+      "chunk_index": 2,
+      "page_number": 3,
+      "original_reference": "academic_lunar_and_materials_2023.md",
+      "token_count": 83,
+      "metadata": {
+        "original_reference": "academic_lunar_and_materials_2023.md",
+        "file_size_bytes": 1473,
+        "page_count": 4,
+        "prompt_injection_sanitized": false,
+        "section_title": "Thermal and Power Subsystems"
+      }
+    },
+    {
+      "chunk_id": "ACADEMIC-b23162a8a0-CHK-003",
+      "source_id": "academic",
+      "doc_id": "ACADEMIC-b23162a8a0",
+      "doc_title": "Lunar & Superconductor Audit (2023)",
+      "doc_type": "md",
+      "text": "Superconductivity Replication Audit (LK-99). Independent crystallographic and magnetometry studies published in 2023 demonstrated that copper-substituted lead apatite (LK-99) is not an ambient-pressure room-temperature superconductor. The observed sharp resistivity drops near 378 Kelvin were caused by copper sulfide (Cu2S) phase-transition impurities rather than zero-resistance Meissner levitation.",
+      "chunk_index": 3,
+      "page_number": 4,
+      "original_reference": "academic_lunar_and_materials_2023.md",
+      "token_count": 58,
+      "metadata": {
+        "original_reference": "academic_lunar_and_materials_2023.md",
+        "file_size_bytes": 1473,
+        "page_count": 4,
+        "prompt_injection_sanitized": false,
+        "section_title": "Superconductivity Replication Audit (LK-99)"
+      }
+    },
+    {
+      "chunk_id": "ACADEMIC-c76f8b1257-CHK-000",
+      "source_id": "academic",
+      "doc_id": "ACADEMIC-c76f8b1257",
+      "doc_title": "CARDIO-SHIELD & Solid-State Battery Study (2024)",
+      "doc_type": "txt",
+      "text": "Title: Multicenter Randomized Trial of Cardioprotective Peptide CPX-402 and Solid-State Electrolytes (Journal of Clinical & Materials Science, 2024) In the Phase III CARDIO-SHIELD trial (N = 4,200 patients), administration of peptide CPX-402 reduced 1-year major adverse cardiovascular events by 28% compared with placebo (p = 0.0004) without elevating hepatotoxicity markers. However, CPX-402 did not reverse established myocardial fibrosis in patients with Stage D heart failure. In parallel energy storage evaluations, lithium argyrodite solid-state batteries achieved a specific energy of 380 Wh/kg and retained 91% capacity after 1,000 charge-discharge cycles at 25 degrees Celsius. Claims of 900 Wh/kg commercial solid-state cells operating at 5,000 cycles were refuted as laboratory extrapolation errors. Retrieval-Augmented Generation (RAG) combines dense neural passage retrieval and sparse lexical search (such as Okapi BM25) via Reciprocal Rank Fusion (RRF), followed by Cross-Encoder reranking to ground language model outputs in external evidence.",
+      "chunk_index": 0,
+      "page_number": 1,
+      "original_reference": "academic_clinical_and_rag_2024.txt",
+      "token_count": 186,
+      "metadata": {
+        "original_reference": "academic_clinical_and_rag_2024.txt",
+        "file_size_bytes": 1064,
+        "page_count": 1,
+        "prompt_injection_sanitized": false
+      }
+    }
+  ]
+}

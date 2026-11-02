@@ -1,0 +1,119 @@
+{
+  "source_id": "pdf",
+  "documents_meta": {
+    "PDF-f2807a16df": {
+      "doc_id": "PDF-f2807a16df",
+      "title": "ISRO & Enterprise Governance Official PDF",
+      "filename": "official_mission_and_governance_report.pdf",
+      "doc_type": "pdf",
+      "source_id": "pdf",
+      "content_hash": "f2807a16df6c02d2c7b5d0d6a735cdd9c7626bed82102bee7aaabac557d231b4",
+      "chunk_count": 2,
+      "page_count": 2,
+      "created_at": "2026-11-02T16:53:09.177635+00:00",
+      "metadata": {
+        "original_reference": "official_mission_and_governance_report.pdf",
+        "file_size_bytes": 2477,
+        "page_count": 2,
+        "prompt_injection_sanitized": false
+      }
+    },
+    "PDF-e19810c024": {
+      "doc_id": "PDF-e19810c024",
+      "title": "Hyperion-7 & Security Engineering SOP",
+      "filename": "enterprise_engineering_sop.docx",
+      "doc_type": "docx",
+      "source_id": "pdf",
+      "content_hash": "e19810c024192acb39151e5e4904a40f6ded7f324a0f36c93665d06d973374b6",
+      "chunk_count": 2,
+      "page_count": 2,
+      "created_at": "2026-11-02T16:53:09.226099+00:00",
+      "metadata": {
+        "original_reference": "enterprise_engineering_sop.docx",
+        "file_size_bytes": 36916,
+        "page_count": 2,
+        "prompt_injection_sanitized": false
+      }
+    }
+  },
+  "content_hashes": {
+    "f2807a16df6c02d2c7b5d0d6a735cdd9c7626bed82102bee7aaabac557d231b4": "PDF-f2807a16df",
+    "e19810c024192acb39151e5e4904a40f6ded7f324a0f36c93665d06d973374b6": "PDF-e19810c024"
+  },
+  "chunks": [
+    {
+      "chunk_id": "PDF-f2807a16df-CHK-000",
+      "source_id": "pdf",
+      "doc_id": "PDF-f2807a16df",
+      "doc_title": "ISRO & Enterprise Governance Official PDF",
+      "doc_type": "pdf",
+      "text": "ISRO & Enterprise Technical Mission Dossier (Official PDF Report) Section 1: Chandrayaan-3 Mission Official Specification. India launched Chandrayaan-3 on July 14, 2023. The Vikram lander achieved a soft landing near the lunar south pole on August 23, 2023, at coordinates 69.37 S, 32.32 E. The mission life of the lander and Pragyan rover was exactly 14 Earth days (1 lunar day), powered exclusively by solar panels. Section 2: Solid-State Battery Safety Certification. Certified enterprise lithium argyrodite cells deliver 380 Wh/kg specific energy and pass nail-penetration thermal runaway tests up to 180 degrees Celsius. Unverified vendor blogs claiming 900 Wh/kg energy density are inaccurate.",
+      "chunk_index": 0,
+      "page_number": 1,
+      "original_reference": "official_mission_and_governance_report.pdf",
+      "token_count": 134,
+      "metadata": {
+        "original_reference": "official_mission_and_governance_report.pdf",
+        "file_size_bytes": 2477,
+        "page_count": 2,
+        "prompt_injection_sanitized": false
+      }
+    },
+    {
+      "chunk_id": "PDF-f2807a16df-CHK-001",
+      "source_id": "pdf",
+      "doc_id": "PDF-f2807a16df",
+      "doc_title": "ISRO & Enterprise Governance Official PDF",
+      "doc_type": "pdf",
+      "text": "Page 2: Clinical & Enterprise AI Governance Protocol Section 3: Peptide CPX-402 Clinical Guidance. The Phase III trial of CPX-402 enrolled 4,200 patients and demonstrated a 28% reduction in major cardiovascular events. It is approved for secondary cardiovascular prevention but is contraindicated as a cure for Established Stage D fibrosis. Section 4: Enterprise RAG Architecture Standard. Hybrid retrieval uses Reciprocal Rank Fusion (RRF constant k=60) to combine dense embeddings and Okapi BM25 lexical scores, followed by cross-encoder reranking and NLI claim verification.",
+      "chunk_index": 1,
+      "page_number": 2,
+      "original_reference": "official_mission_and_governance_report.pdf",
+      "token_count": 107,
+      "metadata": {
+        "original_reference": "official_mission_and_governance_report.pdf",
+        "file_size_bytes": 2477,
+        "page_count": 2,
+        "prompt_injection_sanitized": false
+      }
+    },
+    {
+      "chunk_id": "PDF-e19810c024-CHK-000",
+      "source_id": "pdf",
+      "doc_id": "PDF-e19810c024",
+      "doc_title": "Hyperion-7 & Security Engineering SOP",
+      "doc_type": "docx",
+      "text": "Enterprise Compliance & Engineering Standard Operating Procedure Document ID: SOP-ENG-2024. The Hyperion-7 quantum annealing processor operates at a cryogenic temperature of 15 millikelvin inside a dilution refrigerator and contains 2,048 physical superconducting flux qubits.",
+      "chunk_index": 0,
+      "page_number": 1,
+      "original_reference": "enterprise_engineering_sop.docx",
+      "token_count": 44,
+      "metadata": {
+        "original_reference": "enterprise_engineering_sop.docx",
+        "file_size_bytes": 36916,
+        "page_count": 2,
+        "prompt_injection_sanitized": false,
+        "section_title": "Enterprise Compliance & Engineering Standard Operating Procedure"
+      }
+    },
+    {
+      "chunk_id": "PDF-e19810c024-CHK-001",
+      "source_id": "pdf",
+      "doc_id": "PDF-e19810c024",
+      "doc_title": "Hyperion-7 & Security Engineering SOP",
+      "doc_type": "docx",
+      "text": "Cloud Security & Encryption Mandate All enterprise vector indexes must enforce AES-256 encryption at rest and TLS 1.3 in transit. API keys must never be hardcoded in application source files.",
+      "chunk_index": 1,
+      "page_number": 2,
+      "original_reference": "enterprise_engineering_sop.docx",
+      "token_count": 39,
+      "metadata": {
+        "original_reference": "enterprise_engineering_sop.docx",
+        "file_size_bytes": 36916,
+        "page_count": 2,
+        "prompt_injection_sanitized": false,
+        "section_title": "Cloud Security & Encryption Mandate"
+      }
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+Experiment,Dataset,Accuracy,Precision,Recall,F1_Score,AUROC,FPR,ECE,Brier_Score,Conflict_Acc,Avg_LLM_Calls,Avg_Latency_ms,Avg_Tokens
+E1_ORIGINAL_BASELINE,ragtruth_eval,0.5,0.0,0.0,0.0,1.0,0.0,0.3396,0.209,1.0,0.0,1.844,0.0
+E2_CLAIM_LEVEL_NLI,ragtruth_eval,1.0,1.0,1.0,1.0,1.0,0.0,0.0746,0.0058,1.0,0.0,0.486,0.0
+E3_HYBRID_VERIFICATION,ragtruth_eval,1.0,1.0,1.0,1.0,1.0,0.0,0.0254,0.0007,1.0,1.0,0.539,137.0
+E4_PROPOSED_ACVE,ragtruth_eval,1.0,1.0,1.0,1.0,1.0,0.0,0.0007,0.0,1.0,0.0,0.972,0.0

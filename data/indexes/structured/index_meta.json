@@ -1,0 +1,65 @@
+{
+  "source_id": "structured",
+  "documents_meta": {
+    "STRUCTURED-5c523736c3": {
+      "doc_id": "STRUCTURED-5c523736c3",
+      "title": "Verified Telemetry & Fact Registry CSV",
+      "filename": "structured_verified_telemetry_registry.csv",
+      "doc_type": "csv",
+      "source_id": "structured",
+      "content_hash": "5c523736c319a1c912c00cbc00d2be78ad484beb0b159b5f90333263f310429d",
+      "chunk_count": 2,
+      "page_count": 1,
+      "created_at": "2026-11-02T16:53:09.239303+00:00",
+      "metadata": {
+        "original_reference": "structured_verified_telemetry_registry.csv",
+        "file_size_bytes": 1101,
+        "page_count": 1,
+        "prompt_injection_sanitized": false
+      }
+    }
+  },
+  "content_hashes": {
+    "5c523736c319a1c912c00cbc00d2be78ad484beb0b159b5f90333263f310429d": "STRUCTURED-5c523736c3"
+  },
+  "chunks": [
+    {
+      "chunk_id": "STRUCTURED-5c523736c3-CHK-000",
+      "source_id": "structured",
+      "doc_id": "STRUCTURED-5c523736c3",
+      "doc_title": "Verified Telemetry & Fact Registry CSV",
+      "doc_type": "csv",
+      "text": "Record 1 -> entity_id: ENT-001; entity_name: Chandrayaan-3; attribute: launch_date; verified_value: July 14 2023; unit_or_status: Confirmed; verification_year: 2023. Record 2 -> entity_id: ENT-002; entity_name: Chandrayaan-3 Vikram Lander; attribute: landing_site; verified_value: Lunar South Pole 69.37 S; unit_or_status: Confirmed; verification_year: 2023. Record 3 -> entity_id: ENT-003; entity_name: Chandrayaan-3 Pragyan Rover; attribute: mission_duration_power; verified_value: 14 Earth days solar powered only (no nuclear RHU); unit_or_status: Confirmed; verification_year: 2023. Record 4 -> entity_id: ENT-004; entity_name: Pragyan LIBS Payload; attribute: detected_elements; verified_value: Sulfur Aluminum Calcium Iron Chromium Titanium; unit_or_status: Confirmed; verification_year: 2023. Record 5 -> entity_id: ENT-005; entity_name: LK-99 Copper Lead Apatite; attribute: superconductivity_status; verified_value: Not a room-temperature superconductor; Cu2S impurity artifact; unit_or_status: Refuted; verification_year: 2023. Record 6 -> entity_id: ENT-006; entity_name: Peptide CPX-402 Phase III Trial; attribute: mace_risk_reduction; verified_value: 28 percent reduction across 4200 patients; unit_or_status: Confirmed; verification_year: 2024. Record 7 -> entity_id: ENT-007; entity_name: Lithium Argyrodite Solid-State Cell; attribute: specific_energy; verified_value: 380 Wh/kg at 1000 cycles (900 Wh/kg claim false); unit_or_status: Confirmed; verification_year: 2024. Record 8 -> entity_id: ENT-008; entity_name: Hyperion-7 Quantum Processor; attribute: operating_temperature_qubits; verified_value: 15 millikelvin cryogenic with 2048 physical qubits; unit_or_status: Confirmed; verification_year: 2024.",
+      "chunk_index": 0,
+      "page_number": 1,
+      "original_reference": "structured_verified_telemetry_registry.csv",
+      "token_count": 237,
+      "metadata": {
+        "original_reference": "structured_verified_telemetry_registry.csv",
+        "file_size_bytes": 1101,
+        "page_count": 1,
+        "prompt_injection_sanitized": false,
+        "section_title": "Final Rows (Page 1)"
+      }
+    },
+    {
+      "chunk_id": "STRUCTURED-5c523736c3-CHK-001",
+      "source_id": "structured",
+      "doc_id": "STRUCTURED-5c523736c3",
+      "doc_title": "Verified Telemetry & Fact Registry CSV",
+      "doc_type": "csv",
+      "text": "Record 8 -> entity_id: ENT-008; entity_name: Hyperion-7 Quantum Processor; attribute: operating_temperature_qubits; verified_value: 15 millikelvin cryogenic with 2048 physical qubits; unit_or_status: Confirmed; verification_year: 2024. Record 9 -> entity_id: ENT-009; entity_name: Enterprise Hybrid RAG; attribute: fusion_algorithm; verified_value: Reciprocal Rank Fusion k=60 with Okapi BM25 k1=1.5 b=0.75; unit_or_status: Confirmed; verification_year: 2024.",
+      "chunk_index": 1,
+      "page_number": 1,
+      "original_reference": "structured_verified_telemetry_registry.csv",
+      "token_count": 62,
+      "metadata": {
+        "original_reference": "structured_verified_telemetry_registry.csv",
+        "file_size_bytes": 1101,
+        "page_count": 1,
+        "prompt_injection_sanitized": false,
+        "section_title": "Final Rows (Page 1)"
+      }
+    }
+  ]
+}

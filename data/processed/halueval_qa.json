@@ -1,0 +1,882 @@
+[
+  {
+    "sample_id": "HLU-001",
+    "dataset_name": "halueval_qa",
+    "category": "halueval_qa",
+    "split": "val",
+    "query": "How many physical qubits are in the Hyperion-7 quantum annealing processor?",
+    "generated_answer": "The Hyperion-7 quantum annealing processor contains 2,048 physical superconducting qubits [PDF-SOP].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-SSB-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-SSB",
+          "doc_title": "Battery Study",
+          "doc_type": "md",
+          "text": "The Hyperion-7 quantum annealing processor operates at 15 millikelvin and contains 2,048 physical superconducting qubits.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-SSB.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-SOP-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-SOP",
+          "doc_title": "Hardware SOP",
+          "doc_type": "pdf",
+          "text": "The Hyperion-7 quantum annealing processor operates at 15 millikelvin and contains 2,048 physical superconducting qubits.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-SOP.ref"
+        }
+      ],
+      "web": [],
+      "structured": []
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "HLU-002",
+    "dataset_name": "halueval_qa",
+    "category": "halueval_qa",
+    "split": "val",
+    "query": "How many physical qubits are in the Hyperion-7 quantum annealing processor?",
+    "generated_answer": "The Hyperion-7 quantum annealing processor contains 50,000 physical superconducting qubits [PDF-SOP].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-SSB-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-SSB",
+          "doc_title": "Battery Study",
+          "doc_type": "md",
+          "text": "The Hyperion-7 quantum annealing processor operates at 15 millikelvin and contains 2,048 physical superconducting qubits.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-SSB.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-SOP-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-SOP",
+          "doc_title": "Hardware SOP",
+          "doc_type": "pdf",
+          "text": "The Hyperion-7 quantum annealing processor operates at 15 millikelvin and contains 2,048 physical superconducting qubits.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-SOP.ref"
+        }
+      ],
+      "web": [],
+      "structured": []
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "HLU-003",
+    "dataset_name": "halueval_qa",
+    "category": "halueval_qa",
+    "split": "test",
+    "query": "What capacity retention did lithium argyrodite cells show after 1,000 cycles?",
+    "generated_answer": "Lithium argyrodite solid-state batteries retained 91% capacity after 1,000 charge-discharge cycles [ACADEMIC-SSB].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-SSB-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-SSB",
+          "doc_title": "Battery Study",
+          "doc_type": "md",
+          "text": "Lithium argyrodite solid-state batteries achieved 380 Wh/kg and retained 91% capacity after 1,000 charge-discharge cycles.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-SSB.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-SOP-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-SOP",
+          "doc_title": "Hardware SOP",
+          "doc_type": "pdf",
+          "text": "Lithium argyrodite solid-state batteries achieved 380 Wh/kg and retained 91% capacity after 1,000 charge-discharge cycles.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-SOP.ref"
+        }
+      ],
+      "web": [],
+      "structured": []
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "HLU-004",
+    "dataset_name": "halueval_qa",
+    "category": "halueval_qa",
+    "split": "test",
+    "query": "What capacity retention did lithium argyrodite cells show after 1,000 cycles?",
+    "generated_answer": "Lithium argyrodite solid-state batteries failed and retained only 12% capacity after 1,000 charge-discharge cycles [ACADEMIC-SSB].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-SSB-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-SSB",
+          "doc_title": "Battery Study",
+          "doc_type": "md",
+          "text": "Lithium argyrodite solid-state batteries achieved 380 Wh/kg and retained 91% capacity after 1,000 charge-discharge cycles.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-SSB.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-SOP-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-SOP",
+          "doc_title": "Hardware SOP",
+          "doc_type": "pdf",
+          "text": "Lithium argyrodite solid-state batteries achieved 380 Wh/kg and retained 91% capacity after 1,000 charge-discharge cycles.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-SOP.ref"
+        }
+      ],
+      "web": [],
+      "structured": []
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "HLU-005",
+    "dataset_name": "halueval_qa",
+    "category": "halueval_qa",
+    "split": "test",
+    "query": "How many physical qubits are in the Hyperion-7 quantum annealing processor?",
+    "generated_answer": "The Hyperion-7 quantum annealing processor contains 2,048 physical superconducting qubits [PDF-SOP].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-SSB-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-SSB",
+          "doc_title": "Battery Study",
+          "doc_type": "md",
+          "text": "The Hyperion-7 quantum annealing processor operates at 15 millikelvin and contains 2,048 physical superconducting qubits.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-SSB.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-SOP-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-SOP",
+          "doc_title": "Hardware SOP",
+          "doc_type": "pdf",
+          "text": "The Hyperion-7 quantum annealing processor operates at 15 millikelvin and contains 2,048 physical superconducting qubits.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-SOP.ref"
+        }
+      ],
+      "web": [],
+      "structured": []
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "HLU-006",
+    "dataset_name": "halueval_qa",
+    "category": "halueval_qa",
+    "split": "val",
+    "query": "How many physical qubits are in the Hyperion-7 quantum annealing processor?",
+    "generated_answer": "The Hyperion-7 quantum annealing processor contains 50,000 physical superconducting qubits [PDF-SOP].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-SSB-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-SSB",
+          "doc_title": "Battery Study",
+          "doc_type": "md",
+          "text": "The Hyperion-7 quantum annealing processor operates at 15 millikelvin and contains 2,048 physical superconducting qubits.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-SSB.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-SOP-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-SOP",
+          "doc_title": "Hardware SOP",
+          "doc_type": "pdf",
+          "text": "The Hyperion-7 quantum annealing processor operates at 15 millikelvin and contains 2,048 physical superconducting qubits.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-SOP.ref"
+        }
+      ],
+      "web": [],
+      "structured": []
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "HLU-007",
+    "dataset_name": "halueval_qa",
+    "category": "halueval_qa",
+    "split": "val",
+    "query": "What capacity retention did lithium argyrodite cells show after 1,000 cycles?",
+    "generated_answer": "Lithium argyrodite solid-state batteries retained 91% capacity after 1,000 charge-discharge cycles [ACADEMIC-SSB].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-SSB-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-SSB",
+          "doc_title": "Battery Study",
+          "doc_type": "md",
+          "text": "Lithium argyrodite solid-state batteries achieved 380 Wh/kg and retained 91% capacity after 1,000 charge-discharge cycles.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-SSB.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-SOP-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-SOP",
+          "doc_title": "Hardware SOP",
+          "doc_type": "pdf",
+          "text": "Lithium argyrodite solid-state batteries achieved 380 Wh/kg and retained 91% capacity after 1,000 charge-discharge cycles.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-SOP.ref"
+        }
+      ],
+      "web": [],
+      "structured": []
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "HLU-008",
+    "dataset_name": "halueval_qa",
+    "category": "halueval_qa",
+    "split": "test",
+    "query": "What capacity retention did lithium argyrodite cells show after 1,000 cycles?",
+    "generated_answer": "Lithium argyrodite solid-state batteries failed and retained only 12% capacity after 1,000 charge-discharge cycles [ACADEMIC-SSB].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-SSB-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-SSB",
+          "doc_title": "Battery Study",
+          "doc_type": "md",
+          "text": "Lithium argyrodite solid-state batteries achieved 380 Wh/kg and retained 91% capacity after 1,000 charge-discharge cycles.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-SSB.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-SOP-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-SOP",
+          "doc_title": "Hardware SOP",
+          "doc_type": "pdf",
+          "text": "Lithium argyrodite solid-state batteries achieved 380 Wh/kg and retained 91% capacity after 1,000 charge-discharge cycles.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-SOP.ref"
+        }
+      ],
+      "web": [],
+      "structured": []
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "HLU-009",
+    "dataset_name": "halueval_qa",
+    "category": "halueval_qa",
+    "split": "test",
+    "query": "How many physical qubits are in the Hyperion-7 quantum annealing processor?",
+    "generated_answer": "The Hyperion-7 quantum annealing processor contains 2,048 physical superconducting qubits [PDF-SOP].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-SSB-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-SSB",
+          "doc_title": "Battery Study",
+          "doc_type": "md",
+          "text": "The Hyperion-7 quantum annealing processor operates at 15 millikelvin and contains 2,048 physical superconducting qubits.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-SSB.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-SOP-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-SOP",
+          "doc_title": "Hardware SOP",
+          "doc_type": "pdf",
+          "text": "The Hyperion-7 quantum annealing processor operates at 15 millikelvin and contains 2,048 physical superconducting qubits.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-SOP.ref"
+        }
+      ],
+      "web": [],
+      "structured": []
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "HLU-010",
+    "dataset_name": "halueval_qa",
+    "category": "halueval_qa",
+    "split": "test",
+    "query": "How many physical qubits are in the Hyperion-7 quantum annealing processor?",
+    "generated_answer": "The Hyperion-7 quantum annealing processor contains 50,000 physical superconducting qubits [PDF-SOP].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-SSB-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-SSB",
+          "doc_title": "Battery Study",
+          "doc_type": "md",
+          "text": "The Hyperion-7 quantum annealing processor operates at 15 millikelvin and contains 2,048 physical superconducting qubits.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-SSB.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-SOP-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-SOP",
+          "doc_title": "Hardware SOP",
+          "doc_type": "pdf",
+          "text": "The Hyperion-7 quantum annealing processor operates at 15 millikelvin and contains 2,048 physical superconducting qubits.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-SOP.ref"
+        }
+      ],
+      "web": [],
+      "structured": []
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "HLU-011",
+    "dataset_name": "halueval_qa",
+    "category": "halueval_qa",
+    "split": "val",
+    "query": "What capacity retention did lithium argyrodite cells show after 1,000 cycles?",
+    "generated_answer": "Lithium argyrodite solid-state batteries retained 91% capacity after 1,000 charge-discharge cycles [ACADEMIC-SSB].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-SSB-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-SSB",
+          "doc_title": "Battery Study",
+          "doc_type": "md",
+          "text": "Lithium argyrodite solid-state batteries achieved 380 Wh/kg and retained 91% capacity after 1,000 charge-discharge cycles.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-SSB.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-SOP-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-SOP",
+          "doc_title": "Hardware SOP",
+          "doc_type": "pdf",
+          "text": "Lithium argyrodite solid-state batteries achieved 380 Wh/kg and retained 91% capacity after 1,000 charge-discharge cycles.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-SOP.ref"
+        }
+      ],
+      "web": [],
+      "structured": []
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "HLU-012",
+    "dataset_name": "halueval_qa",
+    "category": "halueval_qa",
+    "split": "val",
+    "query": "What capacity retention did lithium argyrodite cells show after 1,000 cycles?",
+    "generated_answer": "Lithium argyrodite solid-state batteries failed and retained only 12% capacity after 1,000 charge-discharge cycles [ACADEMIC-SSB].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-SSB-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-SSB",
+          "doc_title": "Battery Study",
+          "doc_type": "md",
+          "text": "Lithium argyrodite solid-state batteries achieved 380 Wh/kg and retained 91% capacity after 1,000 charge-discharge cycles.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-SSB.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-SOP-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-SOP",
+          "doc_title": "Hardware SOP",
+          "doc_type": "pdf",
+          "text": "Lithium argyrodite solid-state batteries achieved 380 Wh/kg and retained 91% capacity after 1,000 charge-discharge cycles.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-SOP.ref"
+        }
+      ],
+      "web": [],
+      "structured": []
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "HLU-013",
+    "dataset_name": "halueval_qa",
+    "category": "halueval_qa",
+    "split": "test",
+    "query": "How many physical qubits are in the Hyperion-7 quantum annealing processor?",
+    "generated_answer": "The Hyperion-7 quantum annealing processor contains 2,048 physical superconducting qubits [PDF-SOP].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-SSB-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-SSB",
+          "doc_title": "Battery Study",
+          "doc_type": "md",
+          "text": "The Hyperion-7 quantum annealing processor operates at 15 millikelvin and contains 2,048 physical superconducting qubits.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-SSB.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-SOP-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-SOP",
+          "doc_title": "Hardware SOP",
+          "doc_type": "pdf",
+          "text": "The Hyperion-7 quantum annealing processor operates at 15 millikelvin and contains 2,048 physical superconducting qubits.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-SOP.ref"
+        }
+      ],
+      "web": [],
+      "structured": []
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "HLU-014",
+    "dataset_name": "halueval_qa",
+    "category": "halueval_qa",
+    "split": "test",
+    "query": "How many physical qubits are in the Hyperion-7 quantum annealing processor?",
+    "generated_answer": "The Hyperion-7 quantum annealing processor contains 50,000 physical superconducting qubits [PDF-SOP].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-SSB-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-SSB",
+          "doc_title": "Battery Study",
+          "doc_type": "md",
+          "text": "The Hyperion-7 quantum annealing processor operates at 15 millikelvin and contains 2,048 physical superconducting qubits.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-SSB.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-SOP-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-SOP",
+          "doc_title": "Hardware SOP",
+          "doc_type": "pdf",
+          "text": "The Hyperion-7 quantum annealing processor operates at 15 millikelvin and contains 2,048 physical superconducting qubits.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-SOP.ref"
+        }
+      ],
+      "web": [],
+      "structured": []
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "HLU-015",
+    "dataset_name": "halueval_qa",
+    "category": "halueval_qa",
+    "split": "test",
+    "query": "What capacity retention did lithium argyrodite cells show after 1,000 cycles?",
+    "generated_answer": "Lithium argyrodite solid-state batteries retained 91% capacity after 1,000 charge-discharge cycles [ACADEMIC-SSB].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-SSB-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-SSB",
+          "doc_title": "Battery Study",
+          "doc_type": "md",
+          "text": "Lithium argyrodite solid-state batteries achieved 380 Wh/kg and retained 91% capacity after 1,000 charge-discharge cycles.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-SSB.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-SOP-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-SOP",
+          "doc_title": "Hardware SOP",
+          "doc_type": "pdf",
+          "text": "Lithium argyrodite solid-state batteries achieved 380 Wh/kg and retained 91% capacity after 1,000 charge-discharge cycles.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-SOP.ref"
+        }
+      ],
+      "web": [],
+      "structured": []
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "HLU-016",
+    "dataset_name": "halueval_qa",
+    "category": "halueval_qa",
+    "split": "val",
+    "query": "What capacity retention did lithium argyrodite cells show after 1,000 cycles?",
+    "generated_answer": "Lithium argyrodite solid-state batteries failed and retained only 12% capacity after 1,000 charge-discharge cycles [ACADEMIC-SSB].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-SSB-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-SSB",
+          "doc_title": "Battery Study",
+          "doc_type": "md",
+          "text": "Lithium argyrodite solid-state batteries achieved 380 Wh/kg and retained 91% capacity after 1,000 charge-discharge cycles.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-SSB.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-SOP-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-SOP",
+          "doc_title": "Hardware SOP",
+          "doc_type": "pdf",
+          "text": "Lithium argyrodite solid-state batteries achieved 380 Wh/kg and retained 91% capacity after 1,000 charge-discharge cycles.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-SOP.ref"
+        }
+      ],
+      "web": [],
+      "structured": []
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "HLU-017",
+    "dataset_name": "halueval_qa",
+    "category": "halueval_qa",
+    "split": "val",
+    "query": "How many physical qubits are in the Hyperion-7 quantum annealing processor?",
+    "generated_answer": "The Hyperion-7 quantum annealing processor contains 2,048 physical superconducting qubits [PDF-SOP].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-SSB-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-SSB",
+          "doc_title": "Battery Study",
+          "doc_type": "md",
+          "text": "The Hyperion-7 quantum annealing processor operates at 15 millikelvin and contains 2,048 physical superconducting qubits.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-SSB.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-SOP-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-SOP",
+          "doc_title": "Hardware SOP",
+          "doc_type": "pdf",
+          "text": "The Hyperion-7 quantum annealing processor operates at 15 millikelvin and contains 2,048 physical superconducting qubits.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-SOP.ref"
+        }
+      ],
+      "web": [],
+      "structured": []
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "HLU-018",
+    "dataset_name": "halueval_qa",
+    "category": "halueval_qa",
+    "split": "test",
+    "query": "How many physical qubits are in the Hyperion-7 quantum annealing processor?",
+    "generated_answer": "The Hyperion-7 quantum annealing processor contains 50,000 physical superconducting qubits [PDF-SOP].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-SSB-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-SSB",
+          "doc_title": "Battery Study",
+          "doc_type": "md",
+          "text": "The Hyperion-7 quantum annealing processor operates at 15 millikelvin and contains 2,048 physical superconducting qubits.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-SSB.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-SOP-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-SOP",
+          "doc_title": "Hardware SOP",
+          "doc_type": "pdf",
+          "text": "The Hyperion-7 quantum annealing processor operates at 15 millikelvin and contains 2,048 physical superconducting qubits.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-SOP.ref"
+        }
+      ],
+      "web": [],
+      "structured": []
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "HLU-019",
+    "dataset_name": "halueval_qa",
+    "category": "halueval_qa",
+    "split": "test",
+    "query": "What capacity retention did lithium argyrodite cells show after 1,000 cycles?",
+    "generated_answer": "Lithium argyrodite solid-state batteries retained 91% capacity after 1,000 charge-discharge cycles [ACADEMIC-SSB].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-SSB-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-SSB",
+          "doc_title": "Battery Study",
+          "doc_type": "md",
+          "text": "Lithium argyrodite solid-state batteries achieved 380 Wh/kg and retained 91% capacity after 1,000 charge-discharge cycles.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-SSB.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-SOP-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-SOP",
+          "doc_title": "Hardware SOP",
+          "doc_type": "pdf",
+          "text": "Lithium argyrodite solid-state batteries achieved 380 Wh/kg and retained 91% capacity after 1,000 charge-discharge cycles.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-SOP.ref"
+        }
+      ],
+      "web": [],
+      "structured": []
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "HLU-020",
+    "dataset_name": "halueval_qa",
+    "category": "halueval_qa",
+    "split": "test",
+    "query": "What capacity retention did lithium argyrodite cells show after 1,000 cycles?",
+    "generated_answer": "Lithium argyrodite solid-state batteries failed and retained only 12% capacity after 1,000 charge-discharge cycles [ACADEMIC-SSB].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-SSB-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-SSB",
+          "doc_title": "Battery Study",
+          "doc_type": "md",
+          "text": "Lithium argyrodite solid-state batteries achieved 380 Wh/kg and retained 91% capacity after 1,000 charge-discharge cycles.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-SSB.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-SOP-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-SOP",
+          "doc_title": "Hardware SOP",
+          "doc_type": "pdf",
+          "text": "Lithium argyrodite solid-state batteries achieved 380 Wh/kg and retained 91% capacity after 1,000 charge-discharge cycles.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-SOP.ref"
+        }
+      ],
+      "web": [],
+      "structured": []
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  }
+]

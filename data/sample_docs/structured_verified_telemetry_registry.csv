@@ -1,0 +1,10 @@
+entity_id,entity_name,attribute,verified_value,unit_or_status,verification_year
+ENT-001,Chandrayaan-3,launch_date,July 14 2023,Confirmed,2023
+ENT-002,Chandrayaan-3 Vikram Lander,landing_site,Lunar South Pole 69.37 S,Confirmed,2023
+ENT-003,Chandrayaan-3 Pragyan Rover,mission_duration_power,14 Earth days solar powered only (no nuclear RHU),Confirmed,2023
+ENT-004,Pragyan LIBS Payload,detected_elements,Sulfur Aluminum Calcium Iron Chromium Titanium,Confirmed,2023
+ENT-005,LK-99 Copper Lead Apatite,superconductivity_status,Not a room-temperature superconductor; Cu2S impurity artifact,Refuted,2023
+ENT-006,Peptide CPX-402 Phase III Trial,mace_risk_reduction,28 percent reduction across 4200 patients,Confirmed,2024
+ENT-007,Lithium Argyrodite Solid-State Cell,specific_energy,380 Wh/kg at 1000 cycles (900 Wh/kg claim false),Confirmed,2024
+ENT-008,Hyperion-7 Quantum Processor,operating_temperature_qubits,15 millikelvin cryogenic with 2048 physical qubits,Confirmed,2024
+ENT-009,Enterprise Hybrid RAG,fusion_algorithm,Reciprocal Rank Fusion k=60 with Okapi BM25 k1=1.5 b=0.75,Confirmed,2024

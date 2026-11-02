@@ -1,0 +1,914 @@
+[
+  {
+    "sample_id": "MHP-001",
+    "dataset_name": "multihop_conflict_qa",
+    "category": "multihop_supported",
+    "split": "val",
+    "query": "Compare the launch year of Chandrayaan-3 and the specific energy of lithium argyrodite batteries.",
+    "generated_answer": "India launched Chandrayaan-3 in 2023 [ACADEMIC-CH3], while lithium argyrodite solid-state batteries achieved a specific energy of 380 Wh/kg [STRUCT-SSB].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CH3-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CH3",
+          "doc_title": "Lunar Study",
+          "doc_type": "md",
+          "text": "India launched Chandrayaan-3 on July 14, 2023.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CH3.ref"
+        }
+      ],
+      "pdf": [],
+      "web": [],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-SSB-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-SSB",
+          "doc_title": "Battery Registry",
+          "doc_type": "md",
+          "text": "Lithium argyrodite solid-state batteries achieved a specific energy of 380 Wh/kg.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-SSB.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MHP-002",
+    "dataset_name": "multihop_conflict_qa",
+    "category": "multihop_conflict",
+    "split": "val",
+    "query": "Compare the launch year of Chandrayaan-3 and the superconductivity status of LK-99.",
+    "generated_answer": "India launched Chandrayaan-3 in 2023 [ACADEMIC-CH3], and LK-99 is a confirmed room-temperature superconductor [WEB-BLOG-LK99].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CH3-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CH3",
+          "doc_title": "Lunar & Materials Study",
+          "doc_type": "md",
+          "text": "India launched Chandrayaan-3 in 2023. LK-99 is not a room-temperature superconductor at ambient pressure.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CH3.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-MAT-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-MAT",
+          "doc_title": "Materials Report",
+          "doc_type": "pdf",
+          "text": "LK-99 is not a room-temperature superconductor.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-MAT.ref"
+        }
+      ],
+      "web": [
+        {
+          "chunk_id": "WEB-BLOG-LK99-C1",
+          "source_id": "web",
+          "doc_id": "WEB-BLOG-LK99",
+          "doc_title": "Viral Blog",
+          "doc_type": "md",
+          "text": "LK-99 is a confirmed room-temperature superconductor.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.68,
+          "original_reference": "WEB-BLOG-LK99.ref"
+        }
+      ],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-LK99-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-LK99",
+          "doc_title": "Registry",
+          "doc_type": "md",
+          "text": "LK-99 is not a room-temperature superconductor.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-LK99.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": true,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MHP-003",
+    "dataset_name": "multihop_conflict_qa",
+    "category": "multihop_supported",
+    "split": "test",
+    "query": "Compare the launch year of Chandrayaan-3 and the specific energy of lithium argyrodite batteries.",
+    "generated_answer": "India launched Chandrayaan-3 in 2023 [ACADEMIC-CH3], while lithium argyrodite solid-state batteries achieved a specific energy of 380 Wh/kg [STRUCT-SSB].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CH3-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CH3",
+          "doc_title": "Lunar Study",
+          "doc_type": "md",
+          "text": "India launched Chandrayaan-3 on July 14, 2023.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CH3.ref"
+        }
+      ],
+      "pdf": [],
+      "web": [],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-SSB-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-SSB",
+          "doc_title": "Battery Registry",
+          "doc_type": "md",
+          "text": "Lithium argyrodite solid-state batteries achieved a specific energy of 380 Wh/kg.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-SSB.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MHP-004",
+    "dataset_name": "multihop_conflict_qa",
+    "category": "multihop_conflict",
+    "split": "test",
+    "query": "Compare the launch year of Chandrayaan-3 and the superconductivity status of LK-99.",
+    "generated_answer": "India launched Chandrayaan-3 in 2023 [ACADEMIC-CH3], and LK-99 is a confirmed room-temperature superconductor [WEB-BLOG-LK99].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CH3-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CH3",
+          "doc_title": "Lunar & Materials Study",
+          "doc_type": "md",
+          "text": "India launched Chandrayaan-3 in 2023. LK-99 is not a room-temperature superconductor at ambient pressure.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CH3.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-MAT-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-MAT",
+          "doc_title": "Materials Report",
+          "doc_type": "pdf",
+          "text": "LK-99 is not a room-temperature superconductor.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-MAT.ref"
+        }
+      ],
+      "web": [
+        {
+          "chunk_id": "WEB-BLOG-LK99-C1",
+          "source_id": "web",
+          "doc_id": "WEB-BLOG-LK99",
+          "doc_title": "Viral Blog",
+          "doc_type": "md",
+          "text": "LK-99 is a confirmed room-temperature superconductor.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.68,
+          "original_reference": "WEB-BLOG-LK99.ref"
+        }
+      ],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-LK99-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-LK99",
+          "doc_title": "Registry",
+          "doc_type": "md",
+          "text": "LK-99 is not a room-temperature superconductor.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-LK99.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": true,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MHP-005",
+    "dataset_name": "multihop_conflict_qa",
+    "category": "multihop_supported",
+    "split": "test",
+    "query": "Compare the launch year of Chandrayaan-3 and the specific energy of lithium argyrodite batteries.",
+    "generated_answer": "India launched Chandrayaan-3 in 2023 [ACADEMIC-CH3], while lithium argyrodite solid-state batteries achieved a specific energy of 380 Wh/kg [STRUCT-SSB].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CH3-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CH3",
+          "doc_title": "Lunar Study",
+          "doc_type": "md",
+          "text": "India launched Chandrayaan-3 on July 14, 2023.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CH3.ref"
+        }
+      ],
+      "pdf": [],
+      "web": [],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-SSB-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-SSB",
+          "doc_title": "Battery Registry",
+          "doc_type": "md",
+          "text": "Lithium argyrodite solid-state batteries achieved a specific energy of 380 Wh/kg.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-SSB.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MHP-006",
+    "dataset_name": "multihop_conflict_qa",
+    "category": "multihop_conflict",
+    "split": "val",
+    "query": "Compare the launch year of Chandrayaan-3 and the superconductivity status of LK-99.",
+    "generated_answer": "India launched Chandrayaan-3 in 2023 [ACADEMIC-CH3], and LK-99 is a confirmed room-temperature superconductor [WEB-BLOG-LK99].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CH3-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CH3",
+          "doc_title": "Lunar & Materials Study",
+          "doc_type": "md",
+          "text": "India launched Chandrayaan-3 in 2023. LK-99 is not a room-temperature superconductor at ambient pressure.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CH3.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-MAT-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-MAT",
+          "doc_title": "Materials Report",
+          "doc_type": "pdf",
+          "text": "LK-99 is not a room-temperature superconductor.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-MAT.ref"
+        }
+      ],
+      "web": [
+        {
+          "chunk_id": "WEB-BLOG-LK99-C1",
+          "source_id": "web",
+          "doc_id": "WEB-BLOG-LK99",
+          "doc_title": "Viral Blog",
+          "doc_type": "md",
+          "text": "LK-99 is a confirmed room-temperature superconductor.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.68,
+          "original_reference": "WEB-BLOG-LK99.ref"
+        }
+      ],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-LK99-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-LK99",
+          "doc_title": "Registry",
+          "doc_type": "md",
+          "text": "LK-99 is not a room-temperature superconductor.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-LK99.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": true,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MHP-007",
+    "dataset_name": "multihop_conflict_qa",
+    "category": "multihop_supported",
+    "split": "val",
+    "query": "Compare the launch year of Chandrayaan-3 and the specific energy of lithium argyrodite batteries.",
+    "generated_answer": "India launched Chandrayaan-3 in 2023 [ACADEMIC-CH3], while lithium argyrodite solid-state batteries achieved a specific energy of 380 Wh/kg [STRUCT-SSB].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CH3-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CH3",
+          "doc_title": "Lunar Study",
+          "doc_type": "md",
+          "text": "India launched Chandrayaan-3 on July 14, 2023.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CH3.ref"
+        }
+      ],
+      "pdf": [],
+      "web": [],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-SSB-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-SSB",
+          "doc_title": "Battery Registry",
+          "doc_type": "md",
+          "text": "Lithium argyrodite solid-state batteries achieved a specific energy of 380 Wh/kg.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-SSB.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MHP-008",
+    "dataset_name": "multihop_conflict_qa",
+    "category": "multihop_conflict",
+    "split": "test",
+    "query": "Compare the launch year of Chandrayaan-3 and the superconductivity status of LK-99.",
+    "generated_answer": "India launched Chandrayaan-3 in 2023 [ACADEMIC-CH3], and LK-99 is a confirmed room-temperature superconductor [WEB-BLOG-LK99].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CH3-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CH3",
+          "doc_title": "Lunar & Materials Study",
+          "doc_type": "md",
+          "text": "India launched Chandrayaan-3 in 2023. LK-99 is not a room-temperature superconductor at ambient pressure.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CH3.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-MAT-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-MAT",
+          "doc_title": "Materials Report",
+          "doc_type": "pdf",
+          "text": "LK-99 is not a room-temperature superconductor.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-MAT.ref"
+        }
+      ],
+      "web": [
+        {
+          "chunk_id": "WEB-BLOG-LK99-C1",
+          "source_id": "web",
+          "doc_id": "WEB-BLOG-LK99",
+          "doc_title": "Viral Blog",
+          "doc_type": "md",
+          "text": "LK-99 is a confirmed room-temperature superconductor.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.68,
+          "original_reference": "WEB-BLOG-LK99.ref"
+        }
+      ],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-LK99-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-LK99",
+          "doc_title": "Registry",
+          "doc_type": "md",
+          "text": "LK-99 is not a room-temperature superconductor.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-LK99.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": true,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MHP-009",
+    "dataset_name": "multihop_conflict_qa",
+    "category": "multihop_supported",
+    "split": "test",
+    "query": "Compare the launch year of Chandrayaan-3 and the specific energy of lithium argyrodite batteries.",
+    "generated_answer": "India launched Chandrayaan-3 in 2023 [ACADEMIC-CH3], while lithium argyrodite solid-state batteries achieved a specific energy of 380 Wh/kg [STRUCT-SSB].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CH3-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CH3",
+          "doc_title": "Lunar Study",
+          "doc_type": "md",
+          "text": "India launched Chandrayaan-3 on July 14, 2023.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CH3.ref"
+        }
+      ],
+      "pdf": [],
+      "web": [],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-SSB-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-SSB",
+          "doc_title": "Battery Registry",
+          "doc_type": "md",
+          "text": "Lithium argyrodite solid-state batteries achieved a specific energy of 380 Wh/kg.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-SSB.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MHP-010",
+    "dataset_name": "multihop_conflict_qa",
+    "category": "multihop_conflict",
+    "split": "test",
+    "query": "Compare the launch year of Chandrayaan-3 and the superconductivity status of LK-99.",
+    "generated_answer": "India launched Chandrayaan-3 in 2023 [ACADEMIC-CH3], and LK-99 is a confirmed room-temperature superconductor [WEB-BLOG-LK99].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CH3-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CH3",
+          "doc_title": "Lunar & Materials Study",
+          "doc_type": "md",
+          "text": "India launched Chandrayaan-3 in 2023. LK-99 is not a room-temperature superconductor at ambient pressure.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CH3.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-MAT-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-MAT",
+          "doc_title": "Materials Report",
+          "doc_type": "pdf",
+          "text": "LK-99 is not a room-temperature superconductor.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-MAT.ref"
+        }
+      ],
+      "web": [
+        {
+          "chunk_id": "WEB-BLOG-LK99-C1",
+          "source_id": "web",
+          "doc_id": "WEB-BLOG-LK99",
+          "doc_title": "Viral Blog",
+          "doc_type": "md",
+          "text": "LK-99 is a confirmed room-temperature superconductor.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.68,
+          "original_reference": "WEB-BLOG-LK99.ref"
+        }
+      ],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-LK99-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-LK99",
+          "doc_title": "Registry",
+          "doc_type": "md",
+          "text": "LK-99 is not a room-temperature superconductor.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-LK99.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": true,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MHP-011",
+    "dataset_name": "multihop_conflict_qa",
+    "category": "multihop_supported",
+    "split": "val",
+    "query": "Compare the launch year of Chandrayaan-3 and the specific energy of lithium argyrodite batteries.",
+    "generated_answer": "India launched Chandrayaan-3 in 2023 [ACADEMIC-CH3], while lithium argyrodite solid-state batteries achieved a specific energy of 380 Wh/kg [STRUCT-SSB].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CH3-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CH3",
+          "doc_title": "Lunar Study",
+          "doc_type": "md",
+          "text": "India launched Chandrayaan-3 on July 14, 2023.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CH3.ref"
+        }
+      ],
+      "pdf": [],
+      "web": [],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-SSB-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-SSB",
+          "doc_title": "Battery Registry",
+          "doc_type": "md",
+          "text": "Lithium argyrodite solid-state batteries achieved a specific energy of 380 Wh/kg.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-SSB.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MHP-012",
+    "dataset_name": "multihop_conflict_qa",
+    "category": "multihop_conflict",
+    "split": "val",
+    "query": "Compare the launch year of Chandrayaan-3 and the superconductivity status of LK-99.",
+    "generated_answer": "India launched Chandrayaan-3 in 2023 [ACADEMIC-CH3], and LK-99 is a confirmed room-temperature superconductor [WEB-BLOG-LK99].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CH3-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CH3",
+          "doc_title": "Lunar & Materials Study",
+          "doc_type": "md",
+          "text": "India launched Chandrayaan-3 in 2023. LK-99 is not a room-temperature superconductor at ambient pressure.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CH3.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-MAT-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-MAT",
+          "doc_title": "Materials Report",
+          "doc_type": "pdf",
+          "text": "LK-99 is not a room-temperature superconductor.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-MAT.ref"
+        }
+      ],
+      "web": [
+        {
+          "chunk_id": "WEB-BLOG-LK99-C1",
+          "source_id": "web",
+          "doc_id": "WEB-BLOG-LK99",
+          "doc_title": "Viral Blog",
+          "doc_type": "md",
+          "text": "LK-99 is a confirmed room-temperature superconductor.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.68,
+          "original_reference": "WEB-BLOG-LK99.ref"
+        }
+      ],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-LK99-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-LK99",
+          "doc_title": "Registry",
+          "doc_type": "md",
+          "text": "LK-99 is not a room-temperature superconductor.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-LK99.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": true,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MHP-013",
+    "dataset_name": "multihop_conflict_qa",
+    "category": "multihop_supported",
+    "split": "test",
+    "query": "Compare the launch year of Chandrayaan-3 and the specific energy of lithium argyrodite batteries.",
+    "generated_answer": "India launched Chandrayaan-3 in 2023 [ACADEMIC-CH3], while lithium argyrodite solid-state batteries achieved a specific energy of 380 Wh/kg [STRUCT-SSB].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CH3-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CH3",
+          "doc_title": "Lunar Study",
+          "doc_type": "md",
+          "text": "India launched Chandrayaan-3 on July 14, 2023.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CH3.ref"
+        }
+      ],
+      "pdf": [],
+      "web": [],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-SSB-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-SSB",
+          "doc_title": "Battery Registry",
+          "doc_type": "md",
+          "text": "Lithium argyrodite solid-state batteries achieved a specific energy of 380 Wh/kg.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-SSB.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MHP-014",
+    "dataset_name": "multihop_conflict_qa",
+    "category": "multihop_conflict",
+    "split": "test",
+    "query": "Compare the launch year of Chandrayaan-3 and the superconductivity status of LK-99.",
+    "generated_answer": "India launched Chandrayaan-3 in 2023 [ACADEMIC-CH3], and LK-99 is a confirmed room-temperature superconductor [WEB-BLOG-LK99].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CH3-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CH3",
+          "doc_title": "Lunar & Materials Study",
+          "doc_type": "md",
+          "text": "India launched Chandrayaan-3 in 2023. LK-99 is not a room-temperature superconductor at ambient pressure.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CH3.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-MAT-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-MAT",
+          "doc_title": "Materials Report",
+          "doc_type": "pdf",
+          "text": "LK-99 is not a room-temperature superconductor.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-MAT.ref"
+        }
+      ],
+      "web": [
+        {
+          "chunk_id": "WEB-BLOG-LK99-C1",
+          "source_id": "web",
+          "doc_id": "WEB-BLOG-LK99",
+          "doc_title": "Viral Blog",
+          "doc_type": "md",
+          "text": "LK-99 is a confirmed room-temperature superconductor.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.68,
+          "original_reference": "WEB-BLOG-LK99.ref"
+        }
+      ],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-LK99-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-LK99",
+          "doc_title": "Registry",
+          "doc_type": "md",
+          "text": "LK-99 is not a room-temperature superconductor.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-LK99.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": true,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MHP-015",
+    "dataset_name": "multihop_conflict_qa",
+    "category": "multihop_supported",
+    "split": "test",
+    "query": "Compare the launch year of Chandrayaan-3 and the specific energy of lithium argyrodite batteries.",
+    "generated_answer": "India launched Chandrayaan-3 in 2023 [ACADEMIC-CH3], while lithium argyrodite solid-state batteries achieved a specific energy of 380 Wh/kg [STRUCT-SSB].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CH3-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CH3",
+          "doc_title": "Lunar Study",
+          "doc_type": "md",
+          "text": "India launched Chandrayaan-3 on July 14, 2023.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CH3.ref"
+        }
+      ],
+      "pdf": [],
+      "web": [],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-SSB-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-SSB",
+          "doc_title": "Battery Registry",
+          "doc_type": "md",
+          "text": "Lithium argyrodite solid-state batteries achieved a specific energy of 380 Wh/kg.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-SSB.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 1,
+    "three_way_label": "SUPPORTED",
+    "has_source_conflict": false,
+    "expected_claims_labels": []
+  },
+  {
+    "sample_id": "MHP-016",
+    "dataset_name": "multihop_conflict_qa",
+    "category": "multihop_conflict",
+    "split": "val",
+    "query": "Compare the launch year of Chandrayaan-3 and the superconductivity status of LK-99.",
+    "generated_answer": "India launched Chandrayaan-3 in 2023 [ACADEMIC-CH3], and LK-99 is a confirmed room-temperature superconductor [WEB-BLOG-LK99].",
+    "source_wise_chunks": {
+      "academic": [
+        {
+          "chunk_id": "ACADEMIC-CH3-C1",
+          "source_id": "academic",
+          "doc_id": "ACADEMIC-CH3",
+          "doc_title": "Lunar & Materials Study",
+          "doc_type": "md",
+          "text": "India launched Chandrayaan-3 in 2023. LK-99 is not a room-temperature superconductor at ambient pressure.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.92,
+          "original_reference": "ACADEMIC-CH3.ref"
+        }
+      ],
+      "pdf": [
+        {
+          "chunk_id": "PDF-MAT-C1",
+          "source_id": "pdf",
+          "doc_id": "PDF-MAT",
+          "doc_title": "Materials Report",
+          "doc_type": "pdf",
+          "text": "LK-99 is not a room-temperature superconductor.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.88,
+          "original_reference": "PDF-MAT.ref"
+        }
+      ],
+      "web": [
+        {
+          "chunk_id": "WEB-BLOG-LK99-C1",
+          "source_id": "web",
+          "doc_id": "WEB-BLOG-LK99",
+          "doc_title": "Viral Blog",
+          "doc_type": "md",
+          "text": "LK-99 is a confirmed room-temperature superconductor.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.68,
+          "original_reference": "WEB-BLOG-LK99.ref"
+        }
+      ],
+      "structured": [
+        {
+          "chunk_id": "STRUCT-LK99-C1",
+          "source_id": "structured",
+          "doc_id": "STRUCT-LK99",
+          "doc_title": "Registry",
+          "doc_type": "md",
+          "text": "LK-99 is not a room-temperature superconductor.",
+          "page_number": 1,
+          "retrieval_score": 0.85,
+          "source_reliability": 0.94,
+          "original_reference": "STRUCT-LK99.ref"
+        }
+      ]
+    },
+    "ground_truth_label": 0,
+    "three_way_label": "HALLUCINATED",
+    "has_source_conflict": true,
+    "expected_claims_labels": []
+  }
+]

@@ -1,0 +1,7 @@
+Title: Multicenter Randomized Trial of Cardioprotective Peptide CPX-402 and Solid-State Electrolytes (Journal of Clinical & Materials Science, 2024)
+
+In the Phase III CARDIO-SHIELD trial (N = 4,200 patients), administration of peptide CPX-402 reduced 1-year major adverse cardiovascular events by 28% compared with placebo (p = 0.0004) without elevating hepatotoxicity markers. However, CPX-402 did not reverse established myocardial fibrosis in patients with Stage D heart failure.
+
+In parallel energy storage evaluations, lithium argyrodite solid-state batteries achieved a specific energy of 380 Wh/kg and retained 91% capacity after 1,000 charge-discharge cycles at 25 degrees Celsius. Claims of 900 Wh/kg commercial solid-state cells operating at 5,000 cycles were refuted as laboratory extrapolation errors.
+
+Retrieval-Augmented Generation (RAG) combines dense neural passage retrieval and sparse lexical search (such as Okapi BM25) via Reciprocal Rank Fusion (RRF), followed by Cross-Encoder reranking to ground language model outputs in external evidence.

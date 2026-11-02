@@ -1,0 +1,866 @@
+{
+  "E1_ORIGINAL_BASELINE": {
+    "experiment_id": "E1_ORIGINAL_BASELINE",
+    "description": "Collective answer-context similarity baseline (reproducing reference repo verification)",
+    "dataset_name": "multihop_conflict_qa",
+    "timestamp": "2026-11-02T16:53:14.060549+00:00",
+    "metrics": {
+      "num_samples": 9,
+      "accuracy": 0.5556,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "auroc": 1.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 1.0,
+      "confusion_matrix": {
+        "tp_hallucination": 0,
+        "tn_supported": 5,
+        "fp_false_alarm": 0,
+        "fn_missed_hallucination": 4
+      },
+      "expected_calibration_error": 0.3953,
+      "brier_score": 0.3932,
+      "reliability_bins": [
+        {
+          "bin_index": 0.0,
+          "bin_lower": 0.0,
+          "bin_upper": 0.1,
+          "count": 0.0,
+          "avg_confidence": 0.05,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 1.0,
+          "bin_lower": 0.1,
+          "bin_upper": 0.2,
+          "count": 0.0,
+          "avg_confidence": 0.15,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 2.0,
+          "bin_lower": 0.2,
+          "bin_upper": 0.30000000000000004,
+          "count": 0.0,
+          "avg_confidence": 0.25,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 3.0,
+          "bin_lower": 0.30000000000000004,
+          "bin_upper": 0.4,
+          "count": 0.0,
+          "avg_confidence": 0.35,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 4.0,
+          "bin_lower": 0.4,
+          "bin_upper": 0.5,
+          "count": 0.0,
+          "avg_confidence": 0.45,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 5.0,
+          "bin_lower": 0.5,
+          "bin_upper": 0.6000000000000001,
+          "count": 0.0,
+          "avg_confidence": 0.55,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 6.0,
+          "bin_lower": 0.6000000000000001,
+          "bin_upper": 0.7000000000000001,
+          "count": 0.0,
+          "avg_confidence": 0.65,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 7.0,
+          "bin_lower": 0.7000000000000001,
+          "bin_upper": 0.8,
+          "count": 0.0,
+          "avg_confidence": 0.75,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 8.0,
+          "bin_lower": 0.8,
+          "bin_upper": 0.9,
+          "count": 0.0,
+          "avg_confidence": 0.85,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 9.0,
+          "bin_lower": 0.9,
+          "bin_upper": 1.0,
+          "count": 9.0,
+          "avg_confidence": 0.9509,
+          "empirical_accuracy": 0.5556
+        }
+      ],
+      "avg_verification_latency_ms": 2.15,
+      "avg_llm_calls_per_query": 0.0,
+      "total_llm_calls": 0,
+      "avg_tokens_per_query": 0.0,
+      "peak_memory_mb": 359.29,
+      "avg_evidence_coverage": 1.0,
+      "avg_citation_correctness": 1.0,
+      "avg_source_agreement": 0.5,
+      "conflict_detection_accuracy": 0.5556
+    },
+    "predictions": [
+      {
+        "sample_id": "MHP-003",
+        "category": "multihop_supported",
+        "ground_truth_label": 1,
+        "pred_label": 1,
+        "pred_prob_supported": 0.96,
+        "latency_ms": 2.342014000078052,
+        "llm_calls": 0,
+        "tokens_used": 0,
+        "evidence_coverage": 1.0,
+        "citation_precision": 1.0,
+        "source_agreement": 0.5,
+        "detected_conflict": false
+      },
+      {
+        "sample_id": "MHP-004",
+        "category": "multihop_conflict",
+        "ground_truth_label": 0,
+        "pred_label": 1,
+        "pred_prob_supported": 0.9395,
+        "latency_ms": 2.0325059999777295,
+        "llm_calls": 0,
+        "tokens_used": 0,
+        "evidence_coverage": 1.0,
+        "citation_precision": 1.0,
+        "source_agreement": 0.5,
+        "detected_conflict": false
+      },
+      {
+        "sample_id": "MHP-005",
+        "category": "multihop_supported",
+        "ground_truth_label": 1,
+        "pred_label": 1,
+        "pred_prob_supported": 0.96,
+        "latency_ms": 2.0991610003875394,
+        "llm_calls": 0,
+        "tokens_used": 0,
+        "evidence_coverage": 1.0,
+        "citation_precision": 1.0,
+        "source_agreement": 0.5,
+        "detected_conflict": false
+      },
+      {
+        "sample_id": "MHP-008",
+        "category": "multihop_conflict",
+        "ground_truth_label": 0,
+        "pred_label": 1,
+        "pred_prob_supported": 0.9395,
+        "latency_ms": 2.1270439997351787,
+        "llm_calls": 0,
+        "tokens_used": 0,
+        "evidence_coverage": 1.0,
+        "citation_precision": 1.0,
+        "source_agreement": 0.5,
+        "detected_conflict": false
+      },
+      {
+        "sample_id": "MHP-009",
+        "category": "multihop_supported",
+        "ground_truth_label": 1,
+        "pred_label": 1,
+        "pred_prob_supported": 0.96,
+        "latency_ms": 2.098744000250008,
+        "llm_calls": 0,
+        "tokens_used": 0,
+        "evidence_coverage": 1.0,
+        "citation_precision": 1.0,
+        "source_agreement": 0.5,
+        "detected_conflict": false
+      },
+      {
+        "sample_id": "MHP-010",
+        "category": "multihop_conflict",
+        "ground_truth_label": 0,
+        "pred_label": 1,
+        "pred_prob_supported": 0.9395,
+        "latency_ms": 2.004895000027318,
+        "llm_calls": 0,
+        "tokens_used": 0,
+        "evidence_coverage": 1.0,
+        "citation_precision": 1.0,
+        "source_agreement": 0.5,
+        "detected_conflict": false
+      },
+      {
+        "sample_id": "MHP-013",
+        "category": "multihop_supported",
+        "ground_truth_label": 1,
+        "pred_label": 1,
+        "pred_prob_supported": 0.96,
+        "latency_ms": 2.2605939998356916,
+        "llm_calls": 0,
+        "tokens_used": 0,
+        "evidence_coverage": 1.0,
+        "citation_precision": 1.0,
+        "source_agreement": 0.5,
+        "detected_conflict": false
+      },
+      {
+        "sample_id": "MHP-014",
+        "category": "multihop_conflict",
+        "ground_truth_label": 0,
+        "pred_label": 1,
+        "pred_prob_supported": 0.9395,
+        "latency_ms": 2.2158780002428102,
+        "llm_calls": 0,
+        "tokens_used": 0,
+        "evidence_coverage": 1.0,
+        "citation_precision": 1.0,
+        "source_agreement": 0.5,
+        "detected_conflict": false
+      },
+      {
+        "sample_id": "MHP-015",
+        "category": "multihop_supported",
+        "ground_truth_label": 1,
+        "pred_label": 1,
+        "pred_prob_supported": 0.96,
+        "latency_ms": 2.1706950001316727,
+        "llm_calls": 0,
+        "tokens_used": 0,
+        "evidence_coverage": 1.0,
+        "citation_precision": 1.0,
+        "source_agreement": 0.5,
+        "detected_conflict": false
+      }
+    ]
+  },
+  "E2_CLAIM_LEVEL_NLI": {
+    "experiment_id": "E2_CLAIM_LEVEL_NLI",
+    "description": "Atomic claim extraction + pooled NLI verification (no conflict matrix, 0 LLM judge calls)",
+    "dataset_name": "multihop_conflict_qa",
+    "timestamp": "2026-11-02T16:53:14.074877+00:00",
+    "metrics": {
+      "num_samples": 9,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "auroc": 1.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0,
+      "confusion_matrix": {
+        "tp_hallucination": 4,
+        "tn_supported": 5,
+        "fp_false_alarm": 0,
+        "fn_missed_hallucination": 0
+      },
+      "expected_calibration_error": 0.2545,
+      "brier_score": 0.1092,
+      "reliability_bins": [
+        {
+          "bin_index": 0.0,
+          "bin_lower": 0.0,
+          "bin_upper": 0.1,
+          "count": 0.0,
+          "avg_confidence": 0.05,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 1.0,
+          "bin_lower": 0.1,
+          "bin_upper": 0.2,
+          "count": 0.0,
+          "avg_confidence": 0.15,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 2.0,
+          "bin_lower": 0.2,
+          "bin_upper": 0.30000000000000004,
+          "count": 0.0,
+          "avg_confidence": 0.25,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 3.0,
+          "bin_lower": 0.30000000000000004,
+          "bin_upper": 0.4,
+          "count": 0.0,
+          "avg_confidence": 0.35,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 4.0,
+          "bin_lower": 0.4,
+          "bin_upper": 0.5,
+          "count": 4.0,
+          "avg_confidence": 0.4901,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 5.0,
+          "bin_lower": 0.5,
+          "bin_upper": 0.6000000000000001,
+          "count": 0.0,
+          "avg_confidence": 0.55,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 6.0,
+          "bin_lower": 0.6000000000000001,
+          "bin_upper": 0.7000000000000001,
+          "count": 0.0,
+          "avg_confidence": 0.65,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 7.0,
+          "bin_lower": 0.7000000000000001,
+          "bin_upper": 0.8,
+          "count": 0.0,
+          "avg_confidence": 0.75,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 8.0,
+          "bin_lower": 0.8,
+          "bin_upper": 0.9,
+          "count": 0.0,
+          "avg_confidence": 0.85,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 9.0,
+          "bin_lower": 0.9,
+          "bin_upper": 1.0,
+          "count": 5.0,
+          "avg_confidence": 0.934,
+          "empirical_accuracy": 1.0
+        }
+      ],
+      "avg_verification_latency_ms": 1.36,
+      "avg_llm_calls_per_query": 0.0,
+      "total_llm_calls": 0,
+      "avg_tokens_per_query": 0.0,
+      "peak_memory_mb": 359.29,
+      "avg_evidence_coverage": 1.0,
+      "avg_citation_correctness": 1.0,
+      "avg_source_agreement": 0.5,
+      "conflict_detection_accuracy": 0.5556
+    },
+    "predictions": [
+      {
+        "sample_id": "MHP-003",
+        "category": "multihop_supported",
+        "ground_truth_label": 1,
+        "pred_label": 1,
+        "pred_prob_supported": 0.934,
+        "detected_conflict": false,
+        "llm_judge_calls": 0,
+        "claims_count": 2
+      },
+      {
+        "sample_id": "MHP-004",
+        "category": "multihop_conflict",
+        "ground_truth_label": 0,
+        "pred_label": 0,
+        "pred_prob_supported": 0.4901,
+        "detected_conflict": false,
+        "llm_judge_calls": 0,
+        "claims_count": 2
+      },
+      {
+        "sample_id": "MHP-005",
+        "category": "multihop_supported",
+        "ground_truth_label": 1,
+        "pred_label": 1,
+        "pred_prob_supported": 0.934,
+        "detected_conflict": false,
+        "llm_judge_calls": 0,
+        "claims_count": 2
+      },
+      {
+        "sample_id": "MHP-008",
+        "category": "multihop_conflict",
+        "ground_truth_label": 0,
+        "pred_label": 0,
+        "pred_prob_supported": 0.4901,
+        "detected_conflict": false,
+        "llm_judge_calls": 0,
+        "claims_count": 2
+      },
+      {
+        "sample_id": "MHP-009",
+        "category": "multihop_supported",
+        "ground_truth_label": 1,
+        "pred_label": 1,
+        "pred_prob_supported": 0.934,
+        "detected_conflict": false,
+        "llm_judge_calls": 0,
+        "claims_count": 2
+      },
+      {
+        "sample_id": "MHP-010",
+        "category": "multihop_conflict",
+        "ground_truth_label": 0,
+        "pred_label": 0,
+        "pred_prob_supported": 0.4901,
+        "detected_conflict": false,
+        "llm_judge_calls": 0,
+        "claims_count": 2
+      },
+      {
+        "sample_id": "MHP-013",
+        "category": "multihop_supported",
+        "ground_truth_label": 1,
+        "pred_label": 1,
+        "pred_prob_supported": 0.934,
+        "detected_conflict": false,
+        "llm_judge_calls": 0,
+        "claims_count": 2
+      },
+      {
+        "sample_id": "MHP-014",
+        "category": "multihop_conflict",
+        "ground_truth_label": 0,
+        "pred_label": 0,
+        "pred_prob_supported": 0.4901,
+        "detected_conflict": false,
+        "llm_judge_calls": 0,
+        "claims_count": 2
+      },
+      {
+        "sample_id": "MHP-015",
+        "category": "multihop_supported",
+        "ground_truth_label": 1,
+        "pred_label": 1,
+        "pred_prob_supported": 0.934,
+        "detected_conflict": false,
+        "llm_judge_calls": 0,
+        "claims_count": 2
+      }
+    ]
+  },
+  "E3_HYBRID_VERIFICATION": {
+    "experiment_id": "E3_HYBRID_VERIFICATION",
+    "description": "Atomic claim extraction + pooled NLI + unconditional LLM Judge on 100% of claims",
+    "dataset_name": "multihop_conflict_qa",
+    "timestamp": "2026-11-02T16:53:14.089730+00:00",
+    "metrics": {
+      "num_samples": 9,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "auroc": 1.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0,
+      "confusion_matrix": {
+        "tp_hallucination": 4,
+        "tn_supported": 5,
+        "fp_false_alarm": 0,
+        "fn_missed_hallucination": 0
+      },
+      "expected_calibration_error": 0.1788,
+      "brier_score": 0.058,
+      "reliability_bins": [
+        {
+          "bin_index": 0.0,
+          "bin_lower": 0.0,
+          "bin_upper": 0.1,
+          "count": 0.0,
+          "avg_confidence": 0.05,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 1.0,
+          "bin_lower": 0.1,
+          "bin_upper": 0.2,
+          "count": 0.0,
+          "avg_confidence": 0.15,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 2.0,
+          "bin_lower": 0.2,
+          "bin_upper": 0.30000000000000004,
+          "count": 0.0,
+          "avg_confidence": 0.25,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 3.0,
+          "bin_lower": 0.30000000000000004,
+          "bin_upper": 0.4,
+          "count": 4.0,
+          "avg_confidence": 0.3591,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 4.0,
+          "bin_lower": 0.4,
+          "bin_upper": 0.5,
+          "count": 0.0,
+          "avg_confidence": 0.45,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 5.0,
+          "bin_lower": 0.5,
+          "bin_upper": 0.6000000000000001,
+          "count": 0.0,
+          "avg_confidence": 0.55,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 6.0,
+          "bin_lower": 0.6000000000000001,
+          "bin_upper": 0.7000000000000001,
+          "count": 0.0,
+          "avg_confidence": 0.65,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 7.0,
+          "bin_lower": 0.7000000000000001,
+          "bin_upper": 0.8,
+          "count": 0.0,
+          "avg_confidence": 0.75,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 8.0,
+          "bin_lower": 0.8,
+          "bin_upper": 0.9,
+          "count": 0.0,
+          "avg_confidence": 0.85,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 9.0,
+          "bin_lower": 0.9,
+          "bin_upper": 1.0,
+          "count": 5.0,
+          "avg_confidence": 0.9654,
+          "empirical_accuracy": 1.0
+        }
+      ],
+      "avg_verification_latency_ms": 1.455,
+      "avg_llm_calls_per_query": 2.0,
+      "total_llm_calls": 18,
+      "avg_tokens_per_query": 229.33,
+      "peak_memory_mb": 359.29,
+      "avg_evidence_coverage": 1.0,
+      "avg_citation_correctness": 1.0,
+      "avg_source_agreement": 0.5,
+      "conflict_detection_accuracy": 0.5556
+    },
+    "predictions": [
+      {
+        "sample_id": "MHP-003",
+        "category": "multihop_supported",
+        "ground_truth_label": 1,
+        "pred_label": 1,
+        "pred_prob_supported": 0.9654,
+        "detected_conflict": false,
+        "llm_judge_calls": 2,
+        "claims_count": 2
+      },
+      {
+        "sample_id": "MHP-004",
+        "category": "multihop_conflict",
+        "ground_truth_label": 0,
+        "pred_label": 0,
+        "pred_prob_supported": 0.3591,
+        "detected_conflict": false,
+        "llm_judge_calls": 2,
+        "claims_count": 2
+      },
+      {
+        "sample_id": "MHP-005",
+        "category": "multihop_supported",
+        "ground_truth_label": 1,
+        "pred_label": 1,
+        "pred_prob_supported": 0.9654,
+        "detected_conflict": false,
+        "llm_judge_calls": 2,
+        "claims_count": 2
+      },
+      {
+        "sample_id": "MHP-008",
+        "category": "multihop_conflict",
+        "ground_truth_label": 0,
+        "pred_label": 0,
+        "pred_prob_supported": 0.3591,
+        "detected_conflict": false,
+        "llm_judge_calls": 2,
+        "claims_count": 2
+      },
+      {
+        "sample_id": "MHP-009",
+        "category": "multihop_supported",
+        "ground_truth_label": 1,
+        "pred_label": 1,
+        "pred_prob_supported": 0.9654,
+        "detected_conflict": false,
+        "llm_judge_calls": 2,
+        "claims_count": 2
+      },
+      {
+        "sample_id": "MHP-010",
+        "category": "multihop_conflict",
+        "ground_truth_label": 0,
+        "pred_label": 0,
+        "pred_prob_supported": 0.3591,
+        "detected_conflict": false,
+        "llm_judge_calls": 2,
+        "claims_count": 2
+      },
+      {
+        "sample_id": "MHP-013",
+        "category": "multihop_supported",
+        "ground_truth_label": 1,
+        "pred_label": 1,
+        "pred_prob_supported": 0.9654,
+        "detected_conflict": false,
+        "llm_judge_calls": 2,
+        "claims_count": 2
+      },
+      {
+        "sample_id": "MHP-014",
+        "category": "multihop_conflict",
+        "ground_truth_label": 0,
+        "pred_label": 0,
+        "pred_prob_supported": 0.3591,
+        "detected_conflict": false,
+        "llm_judge_calls": 2,
+        "claims_count": 2
+      },
+      {
+        "sample_id": "MHP-015",
+        "category": "multihop_supported",
+        "ground_truth_label": 1,
+        "pred_label": 1,
+        "pred_prob_supported": 0.9654,
+        "detected_conflict": false,
+        "llm_judge_calls": 2,
+        "claims_count": 2
+      }
+    ]
+  },
+  "E4_PROPOSED_ACVE": {
+    "experiment_id": "E4_PROPOSED_ACVE",
+    "description": "Full ACVE: Source-wise Multi-RAG NLI + Cross-Source Conflict Detection + Adaptive LLM Judge + Calibrated Aggregation",
+    "dataset_name": "multihop_conflict_qa",
+    "timestamp": "2026-11-02T16:53:14.133738+00:00",
+    "metrics": {
+      "num_samples": 9,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "auroc": 1.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0,
+      "confusion_matrix": {
+        "tp_hallucination": 4,
+        "tn_supported": 5,
+        "fp_false_alarm": 0,
+        "fn_missed_hallucination": 0
+      },
+      "expected_calibration_error": 0.0,
+      "brier_score": 0.0,
+      "reliability_bins": [
+        {
+          "bin_index": 0.0,
+          "bin_lower": 0.0,
+          "bin_upper": 0.1,
+          "count": 4.0,
+          "avg_confidence": 0.0,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 1.0,
+          "bin_lower": 0.1,
+          "bin_upper": 0.2,
+          "count": 0.0,
+          "avg_confidence": 0.15,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 2.0,
+          "bin_lower": 0.2,
+          "bin_upper": 0.30000000000000004,
+          "count": 0.0,
+          "avg_confidence": 0.25,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 3.0,
+          "bin_lower": 0.30000000000000004,
+          "bin_upper": 0.4,
+          "count": 0.0,
+          "avg_confidence": 0.35,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 4.0,
+          "bin_lower": 0.4,
+          "bin_upper": 0.5,
+          "count": 0.0,
+          "avg_confidence": 0.45,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 5.0,
+          "bin_lower": 0.5,
+          "bin_upper": 0.6000000000000001,
+          "count": 0.0,
+          "avg_confidence": 0.55,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 6.0,
+          "bin_lower": 0.6000000000000001,
+          "bin_upper": 0.7000000000000001,
+          "count": 0.0,
+          "avg_confidence": 0.65,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 7.0,
+          "bin_lower": 0.7000000000000001,
+          "bin_upper": 0.8,
+          "count": 0.0,
+          "avg_confidence": 0.75,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 8.0,
+          "bin_lower": 0.8,
+          "bin_upper": 0.9,
+          "count": 0.0,
+          "avg_confidence": 0.85,
+          "empirical_accuracy": 0.0
+        },
+        {
+          "bin_index": 9.0,
+          "bin_lower": 0.9,
+          "bin_upper": 1.0,
+          "count": 5.0,
+          "avg_confidence": 1.0,
+          "empirical_accuracy": 1.0
+        }
+      ],
+      "avg_verification_latency_ms": 1.95,
+      "avg_llm_calls_per_query": 0.889,
+      "total_llm_calls": 8,
+      "avg_tokens_per_query": 130.67,
+      "peak_memory_mb": 359.29,
+      "avg_evidence_coverage": 0.4167,
+      "avg_citation_correctness": 1.0,
+      "avg_source_agreement": 0.4972,
+      "conflict_detection_accuracy": 1.0
+    },
+    "predictions": [
+      {
+        "sample_id": "MHP-003",
+        "category": "multihop_supported",
+        "ground_truth_label": 1,
+        "pred_label": 1,
+        "pred_prob_supported": 1.0,
+        "detected_conflict": false,
+        "llm_judge_calls": 0,
+        "claims_count": 2
+      },
+      {
+        "sample_id": "MHP-004",
+        "category": "multihop_conflict",
+        "ground_truth_label": 0,
+        "pred_label": 0,
+        "pred_prob_supported": 0.0,
+        "detected_conflict": true,
+        "llm_judge_calls": 2,
+        "claims_count": 2
+      },
+      {
+        "sample_id": "MHP-005",
+        "category": "multihop_supported",
+        "ground_truth_label": 1,
+        "pred_label": 1,
+        "pred_prob_supported": 1.0,
+        "detected_conflict": false,
+        "llm_judge_calls": 0,
+        "claims_count": 2
+      },
+      {
+        "sample_id": "MHP-008",
+        "category": "multihop_conflict",
+        "ground_truth_label": 0,
+        "pred_label": 0,
+        "pred_prob_supported": 0.0,
+        "detected_conflict": true,
+        "llm_judge_calls": 2,
+        "claims_count": 2
+      },
+      {
+        "sample_id": "MHP-009",
+        "category": "multihop_supported",
+        "ground_truth_label": 1,
+        "pred_label": 1,
+        "pred_prob_supported": 1.0,
+        "detected_conflict": false,
+        "llm_judge_calls": 0,
+        "claims_count": 2
+      },
+      {
+        "sample_id": "MHP-010",
+        "category": "multihop_conflict",
+        "ground_truth_label": 0,
+        "pred_label": 0,
+        "pred_prob_supported": 0.0,
+        "detected_conflict": true,
+        "llm_judge_calls": 2,
+        "claims_count": 2
+      },
+      {
+        "sample_id": "MHP-013",
+        "category": "multihop_supported",
+        "ground_truth_label": 1,
+        "pred_label": 1,
+        "pred_prob_supported": 1.0,
+        "detected_conflict": false,
+        "llm_judge_calls": 0,
+        "claims_count": 2
+      },
+      {
+        "sample_id": "MHP-014",
+        "category": "multihop_conflict",
+        "ground_truth_label": 0,
+        "pred_label": 0,
+        "pred_prob_supported": 0.0,
+        "detected_conflict": true,
+        "llm_judge_calls": 2,
+        "claims_count": 2
+      },
+      {
+        "sample_id": "MHP-015",
+        "category": "multihop_supported",
+        "ground_truth_label": 1,
+        "pred_label": 1,
+        "pred_prob_supported": 1.0,
+        "detected_conflict": false,
+        "llm_judge_calls": 0,
+        "claims_count": 2
+      }
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "source_id": "web",
+  "documents_meta": {
+    "WEB-257bce248d": {
+      "doc_id": "WEB-257bce248d",
+      "title": "TechPulse Community Blog & Rumor Roundup",
+      "filename": "web_techpulse_community_blog.md",
+      "doc_type": "md",
+      "source_id": "web",
+      "content_hash": "257bce248d9dfb3c8e0cd08ca964bea836021a88c5c0ee90a8fd95fee094d675",
+      "chunk_count": 4,
+      "page_count": 4,
+      "created_at": "2026-11-02T16:53:09.231109+00:00",
+      "metadata": {
+        "original_reference": "web_techpulse_community_blog.md",
+        "file_size_bytes": 968,
+        "page_count": 4,
+        "prompt_injection_sanitized": false
+      }
+    }
+  },
+  "content_hashes": {
+    "257bce248d9dfb3c8e0cd08ca964bea836021a88c5c0ee90a8fd95fee094d675": "WEB-257bce248d"
+  },
+  "chunks": [
+    {
+      "chunk_id": "WEB-257bce248d-CHK-000",
+      "source_id": "web",
+      "doc_id": "WEB-257bce248d",
+      "doc_title": "TechPulse Community Blog & Rumor Roundup",
+      "doc_type": "md",
+      "text": "TechPulse Community Blog & Unverified Wire Aggregator (2023-2024).",
+      "chunk_index": 0,
+      "page_number": 1,
+      "original_reference": "web_techpulse_community_blog.md",
+      "token_count": 10,
+      "metadata": {
+        "original_reference": "web_techpulse_community_blog.md",
+        "file_size_bytes": 968,
+        "page_count": 4,
+        "prompt_injection_sanitized": false,
+        "section_title": "TechPulse Community Blog & Unverified Wire Aggregator (2023-2024)"
+      }
+    },
+    {
+      "chunk_id": "WEB-257bce248d-CHK-001",
+      "source_id": "web",
+      "doc_id": "WEB-257bce248d",
+      "doc_title": "TechPulse Community Blog & Rumor Roundup",
+      "doc_type": "md",
+      "text": "Space & Materials Rumor Roundup. India launched Chandrayaan-3 in July 2023, and the Vikram lander touched down near the lunar south pole in August 2023. However, an unverified forum post claimed that the Pragyan rover was equipped with a plutonium radioisotope thermal generator allowing it to operate continuously for 5 years across lunar nights.",
+      "chunk_index": 1,
+      "page_number": 2,
+      "original_reference": "web_techpulse_community_blog.md",
+      "token_count": 70,
+      "metadata": {
+        "original_reference": "web_techpulse_community_blog.md",
+        "file_size_bytes": 968,
+        "page_count": 4,
+        "prompt_injection_sanitized": false,
+        "section_title": "Space & Materials Rumor Roundup"
+      }
+    },
+    {
+      "chunk_id": "WEB-257bce248d-CHK-002",
+      "source_id": "web",
+      "doc_id": "WEB-257bce248d",
+      "doc_title": "TechPulse Community Blog & Rumor Roundup",
+      "doc_type": "md",
+      "text": "Viral Superconductor & Battery Blog Claims. Early social media posts in July 2023 claimed that LK-99 was a proven room-temperature superconductor operating at ambient pressure with full magnetic levitation. Similarly, a promotional blog article claimed that prototype solid-state batteries had already reached 900 Wh/kg in mass production.",
+      "chunk_index": 2,
+      "page_number": 3,
+      "original_reference": "web_techpulse_community_blog.md",
+      "token_count": 61,
+      "metadata": {
+        "original_reference": "web_techpulse_community_blog.md",
+        "file_size_bytes": 968,
+        "page_count": 4,
+        "prompt_injection_sanitized": false,
+        "section_title": "Viral Superconductor & Battery Blog Claims"
+      }
+    },
+    {
+      "chunk_id": "WEB-257bce248d-CHK-003",
+      "source_id": "web",
+      "doc_id": "WEB-257bce248d",
+      "doc_title": "TechPulse Community Blog & Rumor Roundup",
+      "doc_type": "md",
+      "text": "Quantum Hardware Rumors. A tech blog speculated that the Hyperion-7 quantum processor runs at room temperature (300 Kelvin) without cryogenic cooling and features 100,000 error-corrected logical qubits.",
+      "chunk_index": 3,
+      "page_number": 4,
+      "original_reference": "web_techpulse_community_blog.md",
+      "token_count": 35,
+      "metadata": {
+        "original_reference": "web_techpulse_community_blog.md",
+        "file_size_bytes": 968,
+        "page_count": 4,
+        "prompt_injection_sanitized": false,
+        "section_title": "Quantum Hardware Rumors"
+      }
+    }
+  ]
+}

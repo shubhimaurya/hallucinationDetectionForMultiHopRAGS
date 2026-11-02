@@ -1,0 +1,10 @@
+{
+  "status": "ready",
+  "datasets_exported": {
+    "ms_conflict_bench": 32,
+    "ragtruth_eval": 20,
+    "halueval_qa": 20,
+    "multihop_conflict_qa": 16
+  },
+  "output_directory": "/tmp/adaptive-multirag-hallucination-detector/data/processed"
+}

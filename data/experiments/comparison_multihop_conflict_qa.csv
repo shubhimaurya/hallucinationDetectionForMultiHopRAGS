@@ -1,0 +1,5 @@
+Experiment,Dataset,Accuracy,Precision,Recall,F1_Score,AUROC,FPR,ECE,Brier_Score,Conflict_Acc,Avg_LLM_Calls,Avg_Latency_ms,Avg_Tokens
+E1_ORIGINAL_BASELINE,multihop_conflict_qa,0.5556,0.0,0.0,0.0,1.0,0.0,0.3953,0.3932,0.5556,0.0,2.15,0.0
+E2_CLAIM_LEVEL_NLI,multihop_conflict_qa,1.0,1.0,1.0,1.0,1.0,0.0,0.2545,0.1092,0.5556,0.0,1.36,0.0
+E3_HYBRID_VERIFICATION,multihop_conflict_qa,1.0,1.0,1.0,1.0,1.0,0.0,0.1788,0.058,0.5556,2.0,1.455,229.33
+E4_PROPOSED_ACVE,multihop_conflict_qa,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,1.0,0.889,1.95,130.67

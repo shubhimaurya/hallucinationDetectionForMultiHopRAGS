@@ -1,0 +1,5 @@
+Experiment,Dataset,Accuracy,Precision,Recall,F1_Score,AUROC,FPR,ECE,Brier_Score,Conflict_Acc,Avg_LLM_Calls,Avg_Latency_ms,Avg_Tokens
+E1_ORIGINAL_BASELINE,halueval_qa,0.5,0.0,0.0,0.0,1.0,0.0,0.4402,0.336,1.0,0.0,2.036,0.0
+E2_CLAIM_LEVEL_NLI,halueval_qa,1.0,1.0,1.0,1.0,1.0,0.0,0.0668,0.0045,1.0,0.0,0.765,0.0
+E3_HYBRID_VERIFICATION,halueval_qa,1.0,1.0,1.0,1.0,1.0,0.0,0.0235,0.0007,1.0,1.0,0.728,135.0
+E4_PROPOSED_ACVE,halueval_qa,1.0,1.0,1.0,1.0,1.0,0.0,0.0007,0.0,1.0,0.0,0.993,0.0
