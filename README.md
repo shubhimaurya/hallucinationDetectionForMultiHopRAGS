@@ -6,7 +6,6 @@
 
 `ACVE-Hallucination Detector` is a modular, research-oriented Python framework and 7-page Streamlit workbench for claim-level hallucination detection, cross-source conflict analysis, adaptive LLM verification, and calibrated confidence estimation across independent Retrieval-Augmented Generation (Multi-RAG) pipelines.
 
-- **Reference Baseline Repository Acknowledged**: [LakkuAmulya-2/Enterprise-Advanced-RAG-Knowledge-Intelligence-System](https://github.com/LakkuAmulya-2/Enterprise-Advanced-RAG-Knowledge-Intelligence-System)
 - **Technical Audit & Provenance**: See [`research/baseline_analysis.md`](research/baseline_analysis.md) and [`research/contribution_statement.md`](research/contribution_statement.md) for a complete module-by-module audit of the reference repository, bug fixes applied to its BM25 indexing, RRF fusion, reranker deduplication, and benchmark runner, and the newly proposed ACVE research modules.
 
 ## 2. Core Research Contributions Implemented
